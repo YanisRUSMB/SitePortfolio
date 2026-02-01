@@ -9,98 +9,274 @@
 </head>
 
 <body>
-<header>
-  <div class="nav">
-    <div class="brand">
-      <span class="dot"></span>
-      <span>Yanis Reynaud</span>
-      <span class="small">• Game Developer</span>
-    </div>
-    <nav class="links">
-      <a class="chip" href="#projets">Projets</a>
-      <a class="chip" href="#competences">Compétences</a>
-      <a class="chip" href="#parcours">Parcours</a>
-      <a class="chip" href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <div class="panel">
-      <h1>Game Developer</h1>
-      <p class="subtitle">
-        Je développe des jeux et des prototypes orientés gameplay.
-        Je travaille principalement avec <strong>Unreal Engine</strong> (C++ / Blueprint).
-      </p>
-
-      <div class="badges">
-        <span class="badge"><strong>Unreal Engine</strong></span>
-        <span class="badge">C++ / Blueprint</span>
-        <span class="badge">Gameplay • IA</span>
-        <span class="badge">Stage été</span>
+  <!-- NAV -->
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span class="brandName">Yanis Reynaud</span>
+        <span class="brandRole">Game Developer</span>
       </div>
 
-      <div class="ctaRow">
-        <a class="btn primary" href="#projets">Voir mes projets</a>
-        <a class="btn" href="#contact">Contact</a>
-      </div>
+      <nav class="navLinks">
+        <a class="navLink" href="#projets">Projets</a>
+        <a class="navLink" href="#competences">Compétences</a>
+        <a class="navLink" href="#parcours">Parcours</a>
+        <a class="navLink" href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="panel">
-      <h2>Profil</h2>
-      <p class="small">
-        Étudiant en maîtrise de développement de jeux vidéo à l’UQAC.
-        Intéressé par les systèmes de jeu, l’IA et l’optimisation.
-      </p>
-    </div>
-  </section>
+  <main>
+    <!-- HERO FULL WIDTH -->
+    <section class="section sectionHero">
+      <div class="container heroGrid">
+        <div class="panel heroLeft">
+          <div class="heroTop">
+            <h1 class="title">Game Developer</h1>
+            <p class="subtitle">
+              Je développe des jeux et des prototypes orientés gameplay. Je travaille principalement avec
+              <strong>Unreal Engine</strong> (C++ / Blueprint), avec un intérêt pour les systèmes de jeu, l’IA et l’optimisation.
+            </p>
+          </div>
 
-  <section id="projets">
-    <h2>Projets</h2>
-    <div class="grid">
-      <article class="card">
-        <div class="media">GIF / Vidéo</div>
-        <div class="content">
-          <h3>Projet Unreal</h3>
-          <p class="desc">Prototype gameplay développé sur Unreal Engine.</p>
-          <div class="actions">
-            <a class="linkBtn" href="#">Vidéo</a>
-            <a class="linkBtn" href="#">Code</a>
+          <div class="heroBadges">
+            <div class="badge">Unreal Engine</div>
+            <div class="badge">C++ / Blueprint</div>
+            <div class="badge">Gameplay</div>
+            <div class="badge">IA</div>
+            <div class="badge">Optimisation</div>
+          </div>
+
+          <div class="heroCtas">
+            <a class="btn primary" href="#projets">Voir mes projets</a>
+            <a class="btn" href="#contact">Me contacter</a>
+          </div>
+
+          <div class="heroLinks">
+            <a class="link" href="[LIEN_GITHUB]" target="_blank" rel="noopener">GitHub</a>
+            <span class="sep">•</span>
+            <a class="link" href="[LIEN_LINKEDIN]" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="sep">•</span>
+            <a class="link" href="[LIEN_ITCHIO]" target="_blank" rel="noopener">Itch.io</a>
+            <span class="sep">•</span>
+            <a class="link" href="[LIEN_DEMOREEL]" target="_blank" rel="noopener">Demo Reel</a>
           </div>
         </div>
-      </article>
-    </div>
-  </section>
 
-  <section id="competences">
-    <h2>Compétences</h2>
-    <ul>
-      <li>Gameplay programming</li>
-      <li>IA (behavior trees, navigation)</li>
-      <li>Optimisation et debugging</li>
-      <li>C++ / Blueprint</li>
-    </ul>
-  </section>
+        <div class="panel heroRight">
+          <h2 class="h2">Profil</h2>
+          <p class="muted">
+            Étudiant en maîtrise de développement de jeux vidéo à l’UQAC.
+            À la recherche d’un <strong>stage (été)</strong>.
+          </p>
 
-  <section id="parcours">
-    <h2>Parcours</h2>
-    <p>
-      Maîtrise en développement de jeux vidéo — UQAC (en cours)<br>
-      Étudiant d’échange français
-    </p>
-  </section>
+          <div class="stats">
+            <div class="stat">
+              <div class="statLabel">Moteur</div>
+              <div class="statValue">Unreal</div>
+            </div>
+            <div class="stat">
+              <div class="statLabel">Focus</div>
+              <div class="statValue">Gameplay</div>
+            </div>
+            <div class="stat">
+              <div class="statLabel">Intérêts</div>
+              <div class="statValue">IA / Perf</div>
+            </div>
+            <div class="stat">
+              <div class="statLabel">Localisation</div>
+              <div class="statValue">Chicoutimi</div>
+            </div>
+          </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <a class="btn primary" href="mailto:tonmail@email.com">tonmail@email.com</a>
-  </section>
+          <div class="noteBox">
+            <div class="noteTitle">Phrase courte</div>
+            <div class="noteText">
+              Je cherche des projets où je peux livrer des features propres, testables et optimisées.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <span>© <span id="year"></span> Yanis Reynaud</span>
-  </footer>
-</main>
+    <!-- PROJETS FULL WIDTH -->
+    <section id="projets" class="section">
+      <div class="container">
+        <div class="sectionHeader">
+          <h2 class="h2">Projets</h2>
+          <p class="muted">3 à 6 projets • 1 visuel par projet • liens vidéo/code</p>
+        </div>
 
-<script src="script.js"></script>
+        <div class="projectsGrid">
+          <!-- CARD -->
+          <article class="card">
+            <div class="cardMedia">GIF / Vidéo (16:9)</div>
+            <div class="cardBody">
+              <div class="pills">
+                <span class="pill">Unreal</span>
+                <span class="pill">C++</span>
+                <span class="pill">Blueprint</span>
+              </div>
+              <h3 class="h3">[Nom du projet 1]</h3>
+              <p class="muted">
+                Pitch (1 phrase) : jeu [genre] où [mécanique principale].
+              </p>
+              <div class="bullets">
+                <div class="bullet">• Feature 1 (ex: système de combat / input / abilities)</div>
+                <div class="bullet">• Feature 2 (ex: AI / BT / navigation)</div>
+                <div class="bullet">• Feature 3 (ex: debug tools / optimisation)</div>
+              </div>
+              <div class="cardActions">
+                <a class="btn smallBtn" href="[LIEN_VIDEO_1]" target="_blank" rel="noopener">Vidéo</a>
+                <a class="btn smallBtn" href="[LIEN_GITHUB_1]" target="_blank" rel="noopener">Code</a>
+                <a class="btn smallBtn" href="[LIEN_BUILD_1]" target="_blank" rel="noopener">Build</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cardMedia">GIF / Vidéo (16:9)</div>
+            <div class="cardBody">
+              <div class="pills">
+                <span class="pill">Unreal</span>
+                <span class="pill">Gameplay</span>
+                <span class="pill">AI</span>
+              </div>
+              <h3 class="h3">[Nom du projet 2]</h3>
+              <p class="muted">Pitch (1 phrase) : [objectif + boucle de jeu].</p>
+              <div class="bullets">
+                <div class="bullet">• Rôle : [ton rôle]</div>
+                <div class="bullet">• Livré : [feature majeure]</div>
+                <div class="bullet">• Résultat : [démo / prototype jouable]</div>
+              </div>
+              <div class="cardActions">
+                <a class="btn smallBtn" href="[LIEN_VIDEO_2]" target="_blank" rel="noopener">Vidéo</a>
+                <a class="btn smallBtn" href="[LIEN_GITHUB_2]" target="_blank" rel="noopener">Code</a>
+                <a class="btn smallBtn" href="[LIEN_BUILD_2]" target="_blank" rel="noopener">Build</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cardMedia">GIF / Vidéo (16:9)</div>
+            <div class="cardBody">
+              <div class="pills">
+                <span class="pill">Prototype</span>
+                <span class="pill">Tools</span>
+                <span class="pill">Perf</span>
+              </div>
+              <h3 class="h3">[Nom du projet 3]</h3>
+              <p class="muted">Pitch (1 phrase) : [ce que ça démontre].</p>
+              <div class="bullets">
+                <div class="bullet">• Point fort 1</div>
+                <div class="bullet">• Point fort 2</div>
+                <div class="bullet">• Point fort 3</div>
+              </div>
+              <div class="cardActions">
+                <a class="btn smallBtn" href="[LIEN_VIDEO_3]" target="_blank" rel="noopener">Vidéo</a>
+                <a class="btn smallBtn" href="[LIEN_GITHUB_3]" target="_blank" rel="noopener">Code</a>
+                <a class="btn smallBtn" href="[LIEN_BUILD_3]" target="_blank" rel="noopener">Build</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section id="competences" class="section">
+      <div class="container">
+        <div class="sectionHeader">
+          <h2 class="h2">Compétences</h2>
+        </div>
+
+        <div class="twoCols">
+          <div class="panel">
+            <h3 class="h3">Game Dev</h3>
+            <div class="list">
+              <div class="item">• Gameplay systems, interactions, UI</div>
+              <div class="item">• IA : behavior trees / navigation</div>
+              <div class="item">• Debug tools : logs, overlays</div>
+              <div class="item">• Optimisation : profiling, instancing</div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3 class="h3">Tech</h3>
+            <div class="list">
+              <div class="item">• C++ • Blueprint</div>
+              <div class="item">• Git (Perforce si applicable)</div>
+              <div class="item">• Python / C# (si pertinent)</div>
+              <div class="item">• Windows • Visual Studio / Rider</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section id="parcours" class="section">
+      <div class="container">
+        <div class="sectionHeader">
+          <h2 class="h2">Parcours</h2>
+        </div>
+
+        <div class="panel">
+          <div class="timeline">
+            <div class="tlItem">
+              <div class="tlTitle">Maîtrise — Développement de jeux vidéo</div>
+              <div class="tlMeta muted">UQAC — en cours</div>
+              <div class="tlText muted">Cours / projets : gameplay, IA, optimisation (ajuste selon ton cas).</div>
+            </div>
+
+            <div class="tlItem">
+              <div class="tlTitle">Étudiant d’échange français</div>
+              <div class="tlMeta muted">Expérience internationale</div>
+              <div class="tlText muted">Travail en contexte multiculturel, projets en équipe.</div>
+            </div>
+
+            <div class="tlItem">
+              <div class="tlTitle">[Option] Game jams / concours</div>
+              <div class="tlMeta muted">Ex : WonderJam / projets d’équipe</div>
+              <div class="tlText muted">1 ligne par événement + lien si dispo.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section sectionContact">
+      <div class="container contactGrid">
+        <div class="panel">
+          <h2 class="h2">Contact</h2>
+          <p class="muted">Stage (été) / collaboration / projet : écris-moi.</p>
+          <div class="contactBtns">
+            <a class="btn primary" href="mailto:[TON_EMAIL]">[TON_EMAIL]</a>
+            <a class="btn" href="[LIEN_LINKEDIN]" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="[LIEN_GITHUB]" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="[LIEN_CV_PDF]" target="_blank" rel="noopener">CV (PDF)</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3 class="h3">Infos</h3>
+          <div class="list">
+            <div class="item">• Localisation : Chicoutimi (QC)</div>
+            <div class="item">• Disponibilité : été [année]</div>
+            <div class="item">• Domaines : gameplay / IA / perf</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer">
+        <span>© <span id="year"></span> Yanis Reynaud</span>
+        <span class="muted">Dernière mise à jour : <span id="updated"></span></span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
