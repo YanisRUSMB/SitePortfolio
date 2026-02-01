@@ -252,52 +252,6 @@ a{
   color:var(--muted);
 }
 
-.projects{
-  display:grid;
-  gap:20px;
-}
-
-.projectCard{
-  display:grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap:24px;
-  padding:24px;
-  border-radius:22px;
-  border:1px solid var(--line);
-  background:var(--surface-2);
-  box-shadow:var(--shadow);
-}
-
-.projectMedia{
-  border-radius:18px;
-  background:linear-gradient(140deg, rgba(122,107,255,.25), rgba(75,208,255,.15));
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:600;
-  color:var(--muted);
-  min-height:200px;
-}
-
-.projectBody h3{
-  margin:0 0 8px;
-}
-
-.projectBody p{
-  margin:0 0 12px;
-  color:var(--muted);
-}
-
-.projectBody ul{
-  margin:0 0 16px 18px;
-  color:var(--muted);
-}
-
-.projectActions{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
 
 .skillsGrid{
   display:grid;
