@@ -276,29 +276,32 @@ a{
   color:var(--muted);
 }
 
-.timeline{
+.experienceGrid{
   display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
   gap:16px;
 }
 
-.timelineItem{
-  padding:20px;
+.experienceCard{
+  padding:18px;
   border-radius:18px;
   border:1px solid var(--line);
   background:var(--surface);
+  min-height:180px;
 }
 
-.timelineItem h3{
+.experienceCard h3{
   margin:0 0 6px;
 }
 
-.timelineItem span{
+.experienceCard span{
   display:block;
   color:var(--muted);
   margin-bottom:8px;
+  font-size:13px;
 }
 
-.timelineItem p{
+.experienceCard p{
   margin:0;
   color:var(--muted);
 }
@@ -337,11 +340,11 @@ a{
   .heroGrid{
     grid-template-columns:1fr;
   }
-  .projectCard{
-    grid-template-columns:1fr;
-  }
   .contactGrid{
     grid-template-columns:1fr;
+  }
+  .experienceGrid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -352,5 +355,8 @@ a{
   .headerInner{
     flex-direction:column;
     align-items:flex-start;
+  }
+  .experienceGrid{
+    grid-template-columns:1fr;
   }
 }
