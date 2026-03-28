@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>À propos — Yanis Reynaud</title>
+  <meta name="description" content="Parcours, expériences et compétences de Yanis Reynaud." />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logoportfolio.png">
+</head>
+
+<body>
+  <header class="siteHeader">
+    <div class="container headerInner">
+      <a class="logo" href="index.html" aria-label="Accueil">
+        <span class="logoMark">YR</span>
+        <span class="logoText">
+          <span class="logoName">Yanis Reynaud</span>
+          <span class="logoRole">Game Developer</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="a-propos.html" class="active">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section pageHeader">
+      <div class="container">
+        <h1>À propos de moi</h1>
+        <p class="lead">Découvrez mon parcours, mes expériences et les compétences techniques que j'ai développées.</p>
+      </div>
+    </section>
+
+    <section id="competences" class="section alt">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Compétences</h2>
+          <p>Tech stack, méthodes et outils que j’utilise régulièrement.</p>
+        </div>
+
+        <div class="skillsGrid">
+          <div class="skillCard">
+            <h3>Gameplay</h3>
+            <p>Systèmes de combat, interactions, UI et boucle de jeu.</p>
+          </div>
+          <div class="skillCard">
+            <h3>IA &amp; Tools</h3>
+            <p>Behavior Trees, navigation, outils de debug et profils.</p>
+          </div>
+          <div class="skillCard">
+            <h3>Tech</h3>
+            <p>C++ · Blueprint · Git/Perforce · Visual Studio/Rider.</p>
+          </div>
+          <div class="skillCard">
+            <h3>Réseau</h3>
+            <p>Optimisation, lobby, re-sync, duplication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences" class="section">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Expériences</h2>
+          <p>Une sélection d’expériences, stages et projets marquants.</p>
+        </div>
+
+        <div class="experienceGrid">
+          <div class="experienceCard">
+            <h3>Maîtrise — Développement de jeux vidéo</h3>
+            <span>UQAC — en cours</span>
+            <p>Gameplay, IA, optimisation et prototypage.</p>
+          </div>
+          <div class="experienceCard">
+            <h3>Stage / alternance</h3>
+            <span>[Peut-être chez vous?]</span>
+            <p>Responsabilités : systèmes de jeu, tools, UI.</p>
+          </div>
+          <div class="experienceCard">
+            <h3>Game jam</h3>
+            <span>WonderJam — 2025 - Automne</span>
+            <p>Roguelike basé sur le jeu de carte "La BATAILLE".</p>
+          </div>
+          <div class="experienceCard">
+            <h3>Projet étudiant</h3>
+            <span>Prototype UE — 2025 - Hiver</span>
+            <p>Jeu dans le cadre d'un cours en association avec le NAD-UQAC.</p>
+          </div>
+          <div class="experienceCard">
+            <h3>WIP</h3>
+            <span>D'autres expériences sont en cours</span>
+            <p>Revenez plus tard !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerInner">
+      <span>© <span id="year"></span> Yanis Reynaud</span>
+      <span>Dernière mise à jour : <span id="updated"></span></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
