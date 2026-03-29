@@ -87,6 +87,13 @@ a{
   box-shadow: none;
 }
 
+.logoMarkImg{
+  width:44px;
+  height:44px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
 .logoText{
   display:flex;
   flex-direction:column;
@@ -422,6 +429,8 @@ a{
 
 .projectCardLink {
   display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .projectCard {
