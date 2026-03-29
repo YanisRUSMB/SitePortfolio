@@ -24,10 +24,14 @@
       </a>
 
       <nav class="nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="projets.html" class="active">Projets</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="projets.html" class="active" data-i18n="nav.projects">Projets</a>
+        <a href="a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="#" id="lang-toggle" style="margin-left: auto; border-left: 1px solid var(--line); padding-left: 18px; display: flex; align-items: center; gap: 6px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span id="lang-switch-text">EN</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -35,14 +39,14 @@
   <main id="top">
     <section class="section pageHeader">
       <div class="container">
-        <h1>Tous mes Projets</h1>
-        <p class="lead">Découvrez les jeux, prototypes et autres réalisations sur lesquels j'ai travaillé.</p>
+        <h1 data-i18n="projects.header.title">Mes Projets</h1>
+        <p class="lead" data-i18n="projects.header.desc">Découvrez l'ensemble de mes réalisations, des jeux vidéo complets aux outils techniques spécialisés.</p>
 
         <div class="projectFilters">
-          <button class="filterBtn active" data-filter="all">Tous</button>
-          <button class="filterBtn" data-filter="jeux">Jeux</button>
-          <button class="filterBtn" data-filter="outils">Outils</button>
-          <button class="filterBtn" data-filter="tests">Tests Techniques</button>
+          <button class="filterBtn active" data-filter="all" data-i18n="projects.filter.all">Tous</button>
+          <button class="filterBtn" data-filter="jeux" data-i18n="projects.filter.games">Jeux Vidéo</button>
+          <button class="filterBtn" data-filter="outils" data-i18n="projects.filter.tools">Outils & Moteurs</button>
+          <button class="filterBtn" data-filter="tests" data-i18n="projects.filter.tests">Tests Techniques</button>
         </div>
       </div>
     </section>
@@ -57,7 +61,7 @@
               </div>
               <div class="projectInfo">
                 <h3>TropicMadness</h3>
-                <p>Vous incarnez un personnage prêt à partir pour l'escapade ultime. Vous vous attendez au vol le plus calme de votre vie en direction d'une île paradisiaque, mais les choses risquent de ne pas se passer comme prévu...</p>
+                <p data-i18n="projects.card.tropic.desc">Vous incarnez un personnage prêt à partir pour l'escapade ultime. Vous vous attendez au vol le plus calme de votre vie...</p>
               </div>
             </div>
           </a>
@@ -69,7 +73,7 @@
               </div>
               <div class="projectInfo">
                 <h3>AR Test</h3>
-                <p>Application mobile en réalité augmentée conçue pour la remise à niveau des utilisateurs, intégrant un système de quêtes adapté à différents types de profils.</p>
+                <p data-i18n="projects.card.ar.desc">Test technique de réalité augmentée implémentant divers systèmes interactifs avec Unreal Engine.</p>
               </div>
             </div>
           </a>
@@ -81,7 +85,7 @@
               </div>
               <div class="projectInfo">
                 <h3>Moteur Physique</h3>
-                <p>Projet de création d'un moteur physique en C++ réalisé dans le cadre d'un cours de math-physique à l'UQAC. Ce moteur gère la physique 3D basique.</p>
+                <p data-i18n="projects.card.engine.desc">Projet de création d'un moteur physique en C++ réalisé dans le cadre d'un cours de math-physique à l'UQAC.</p>
               </div>
             </div>
           </a>
@@ -93,7 +97,7 @@
               </div>
               <div class="projectInfo">
                 <h3>One Last Stake</h3>
-                <p>OneLastTake est un jeu de carte inspiré du jeu de la bataille dans un rogue-lite. Affrontez des adversaires et créez des contrefaçons de cartes en collant subtilement des stickers dessus ! L'objectif est d'aller le plus loin possible avec les différents decks disponibles.</p>
+                <p data-i18n="projects.card.stake.desc">Tentez de survivre à des vagues de monstres pour accomplir votre quête de vengeance...</p>
               </div>
             </div>
           </a>
@@ -105,7 +109,7 @@
               </div>
               <div class="projectInfo">
                 <h3>API Node Drones Web</h3>
-                <p>Une première version d'un projet visant à contrôler des drones via une interface web, en utilisant un panel de contrôle de puissance. L'API est développée en Node.js.</p>
+                <p data-i18n="projects.card.api.desc">Une API Backend pour gérer une flotte de drones.</p>
               </div>
             </div>
           </a>
@@ -117,7 +121,7 @@
               </div>
               <div class="projectInfo">
                 <h3>Critter Eats</h3>
-                <p>Prototype du second pitch de jeu pour le cours réalisation de jeux vidéo de l'UQAC. C'est un jeu centré sur le parcours du héros accompagné de son fidèle compagnon.</p>
+                <p data-i18n="projects.card.critter.desc">Incarnez un écureuil prêt à tout pour protéger sa précieuse noisette d'une horde de monstres affamés...</p>
               </div>
             </div>
           </a>
@@ -129,7 +133,7 @@
               </div>
               <div class="projectInfo">
                 <h3>Bedroom Rumble</h3>
-                <p>Bedroom Rumble est un petit jeu créé lors de la Wonderjam Winter 2025 en 48 heures. C'est un jeu versus avec des mécaniques de tower defense en local, où vous affrontez votre frère ou sœur pour le contrôle de la chambre ! Le but est de détruire le lit adverse en utilisant des jouets.</p>
+                <p data-i18n="projects.card.rumble.desc">Vous avez été rétréci dans la chambre d'un adolescent. Un des deux joueurs a une longueur d'avance sur l'autre...</p>
               </div>
             </div>
           </a>
@@ -141,7 +145,7 @@
               </div>
               <div class="projectInfo">
                 <h3>Tool Unreal</h3>
-                <p>Outil utilitaire pour Unreal Engine permettant de faciliter la gestion et l'organisation des projets au sein du moteur.</p>
+                <p data-i18n="projects.card.tool.desc">Outil utilitaire pour Unreal Engine permettant de faciliter la gestion et l'organisation des projets au sein du moteur.</p>
               </div>
             </div>
           </a>
@@ -153,7 +157,7 @@
               </div>
               <div class="projectInfo">
                 <h3>BloodyEscape</h3>
-                <p>Vous êtes un prisonnier à qui l'on a promis une chance de liberté. Jeté à travers un portail, vous vous réveillez dans un donjon d'une dimension instable. Votre objectif : fouiller les lieux, vous équiper, et trouver un autre portail pour vous échapper.</p>
+                <p data-i18n="projects.card.bloody.desc">Vous incarnez le dernier survivant d'un monde post-apocalyptique dévasté par un mystérieux virus...</p>
               </div>
             </div>
           </a>
@@ -164,11 +168,12 @@
 
   <footer class="footer">
     <div class="container footerInner">
-      <span>© <span id="year"></span> Yanis Reynaud</span>
-      <span>Dernière mise à jour : <span id="updated"></span></span>
+      <span data-i18n="footer.rights">© <span id="year"></span> Yanis Reynaud</span>
+      <span data-i18n="footer.updated">Dernière mise à jour : <span id="updated"></span></span>
     </div>
   </footer>
 
+  <script src="lang.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

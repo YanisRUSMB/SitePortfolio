@@ -23,21 +23,25 @@
 </span>
 </a>
 <nav aria-label="Navigation principale" class="nav">
-<a href="index.html">Accueil</a>
-<a class="active" href="projets.html">Projets</a>
-<a href="a-propos.html">À propos</a>
-<a href="contact.html">Contact</a>
+        <a href="index.html"  data-i18n="nav.home">Accueil</a>
+        <a href="projets.html" class="active" data-i18n="nav.projects">Projets</a>
+        <a href="a-propos.html"  data-i18n="nav.about">À propos</a>
+        <a href="contact.html"  data-i18n="nav.contact">Contact</a>
+        <a href="#" id="lang-toggle" style="margin-left: auto; border-left: 1px solid var(--line); padding-left: 18px; display: flex; align-items: center; gap: 6px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span id="lang-switch-text">EN</span>
+        </a>
 </nav>
 </div>
 </header>
 <main id="top">
 <section class="section projectHeaderSection">
 <div class="container">
-<a class="backLink" href="projets.html">← Retour aux projets</a>
+<a class="backLink" href="projets.html" data-i18n="project.detail.back">← Retour aux projets</a>
 <div class="projectHeaderTitleRow">
-<h1>Critter Eats <span style="font-size: 0.5em; color: var(--text-muted); font-weight: normal; margin-left: 10px;">(Mai 2025)</span></h1>
+<h1>Critter Eats <span style="font-size: 0.5em; color: var(--text-muted); font-weight: normal; margin-left: 10px;"><span data-i18n="projects.card.date.prefix"></span><span data-i18n="date.month.mai">Mai</span> 2025</span></h1>
 <div class="projectExternalLinks">
-<a class="btn small ghost" href="https://thegreatestrock.itch.io/critter-eats" rel="noopener" target="_blank">Jouer sur itch.io</a>
+<a class="btn small ghost" href="https://thegreatestrock.itch.io/critter-eats" rel="noopener" target="_blank" data-i18n="project.detail.btn.play">Jouer sur itch.io</a>
 <!-- Ajouter le lien itch.io si disponible -->
 </div>
 </div>
@@ -53,11 +57,11 @@
 <!-- Remplacer ceci par une balise img ou video plus tard -->
 <img alt="Critter Eats" class="projectMainMedia" src="https://img.itch.zone/aW1nLzIwNDE3MTkwLnBuZw==/315x250%23c/gZKaVi.png"/>
 <div class="projectDescription">
-<h2>À propos de ce projet</h2>
-<p>Plus d'informations sur la page itch.io du projet.</p><h3>Mes contributions</h3><ul>
-<li>Implémentation du système de 'trace' pour le suivi du compagnon.</li>
-<li>Gestion du maintien et du transport de la nourriture au sein du niveau.</li>
-<li>Programmation des différents mouvements (locomotion) du personnage principal.</li>
+<h2 data-i18n="project.context.title">À propos de ce projet</h2>
+<p><span data-i18n="project.critter.context">Plus d'informations sur la page itch.io du projet.</span></p><h3 data-i18n="project.detail.contrib.title">Mes contributions</h3><ul>
+<li data-i18n="project.critter.c1">Implémentation du système de 'trace' pour le suivi du compagnon.</li>
+<li data-i18n="project.critter.c2">Gestion du maintien et du transport de la nourriture au sein du niveau.</li>
+<li data-i18n="project.critter.c3">Programmation des différents mouvements (locomotion) du personnage principal.</li>
 </ul>
 </div>
 </div>
@@ -65,10 +69,11 @@
 </main>
 <footer class="footer">
 <div class="container footerInner">
-<span>© <span id="year"></span> Yanis Reynaud</span>
-<span>Dernière mise à jour : <span id="updated"></span></span>
+<span data-i18n="footer.rights">© <span id="year"></span> Yanis Reynaud</span>
+<span data-i18n="footer.updated">Dernière mise à jour : <span id="updated"></span></span>
 </div>
 </footer>
-<script src="script.js"></script>
+<script src="lang.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
