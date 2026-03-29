@@ -15,6 +15,7 @@ const translations = {
     "home.hero.intro": "Je me présente, Yanis, 21 ans. Après deux années d'échange universitaire, je suis actuellement en maîtrise de jeux vidéo à l'UQAC et à la recherche d'un stage. J'ai commencé l'informatique il y a 5 ans au lycée, et depuis, je continue d'explorer ce vaste univers !",
     "home.hero.btn.projects": "Voir mes projets",
     "home.hero.btn.about": "En savoir plus sur moi",
+    "home.skills.title": "Mes outils de prédilection",
 
     "home.preview.title": "Aperçu de mes travaux",
     "home.preview.desc": "Un jeu, un test de moteur, et un outil. Découvrez la liste complète dans la section Projets.",
@@ -37,6 +38,9 @@ const translations = {
     "projects.filter.games": "Jeux Vidéo",
     "projects.filter.tools": "Outils & Moteurs",
     "projects.filter.tests": "Tests Techniques",
+    "projects.badge.jeux": "Jeu Vidéo",
+    "projects.badge.outils": "Outil Éditeur",
+    "projects.badge.tests": "Test Technique",
 
     "projects.card.date.prefix": "Sortie : ",
     "projects.card.tropic.desc": "Vous incarnez un personnage prêt à partir pour l'escapade ultime. Vous vous attendez au vol le plus calme de votre vie...",
@@ -63,17 +67,17 @@ const translations = {
     "about.exp1.date": "UQAC — en cours",
     "about.exp1.desc": "Gameplay, IA, optimisation et prototypage.",
 
-    "about.exp2.title": "Stage / alternance",
-    "about.exp2.date": "[Peut-être chez vous?]",
-    "about.exp2.desc": "Responsabilités : systèmes de jeu, tools, UI.",
+    "about.exp2.title": "Stage Développeur Logiciel",
+    "about.exp2.date": "USMB — Juin - Août 2024",
+    "about.exp2.desc": "Développement d'outils et de systèmes logiciels au sein de l'Université Savoie Mont Blanc.",
 
-    "about.exp3.title": "Game jam",
-    "about.exp3.date": "WonderJam — 2025 - Automne",
-    "about.exp3.desc": "Roguelike basé sur le jeu de carte \"La BATAILLE\".",
+    "about.exp3.title": "Participations aux WonderJams",
+    "about.exp3.date": "Plusieurs éditions (ex: Hiver 2025)",
+    "about.exp3.desc": "Création de jeux sous contraintes de temps, dont le jeu asymétrique Bedroom Rumble. (Voir page Projets)",
 
-    "about.exp4.title": "Projet étudiant",
+    "about.exp4.title": "Projet Étudiant avec le NAD-UQAC",
     "about.exp4.date": "Prototype UE — 2025 - Hiver",
-    "about.exp4.desc": "Jeu dans le cadre d'un cours en association avec le NAD-UQAC.",
+    "about.exp4.desc": "Développement d'un jeu vidéo dans le cadre d'un cours collaboratif. (Voir page Projets)",
 
     "about.exp5.title": "WIP",
     "about.exp5.date": "D'autres expériences sont en cours",
@@ -172,6 +176,7 @@ const translations = {
     "home.hero.intro": "I'm Yanis, 21 years old. After two years of university exchange, I'm currently pursuing a Master's degree in Video Games at UQAC and looking for an internship. I started computer science 5 years ago in high school, and since then, I continue to explore this vast universe!",
     "home.hero.btn.projects": "View my projects",
     "home.hero.btn.about": "Learn more about me",
+    "home.skills.title": "My Favorite Tools",
 
     "home.preview.title": "Selected Works",
     "home.preview.desc": "A game, a physics engine, and a tool. Discover the full list in the Projects section.",
@@ -220,17 +225,17 @@ const translations = {
     "about.exp1.date": "UQAC — Ongoing",
     "about.exp1.desc": "Gameplay, AI, optimization, and prototyping.",
 
-    "about.exp2.title": "Internship / Work-Study",
-    "about.exp2.date": "[Maybe at your company?]",
-    "about.exp2.desc": "Responsibilities: game systems, tools, UI.",
+    "about.exp2.title": "Software Developer Intern",
+    "about.exp2.date": "USMB — June - August 2024",
+    "about.exp2.desc": "Development of software tools and systems at Université Savoie Mont Blanc.",
 
-    "about.exp3.title": "Game jam",
-    "about.exp3.date": "WonderJam — 2025 - Fall",
-    "about.exp3.desc": "Roguelike based on the card game \"WAR\".",
+    "about.exp3.title": "WonderJams Participation",
+    "about.exp3.date": "Multiple editions (e.g. Winter 2025)",
+    "about.exp3.desc": "Creation of games under time constraints, including the asymmetrical game Bedroom Rumble. (See Projects page)",
 
-    "about.exp4.title": "Student Project",
+    "about.exp4.title": "Student Project with NAD-UQAC",
     "about.exp4.date": "UE Prototype — 2025 - Winter",
-    "about.exp4.desc": "Game developed for a course in association with NAD-UQAC.",
+    "about.exp4.desc": "Development of a video game as part of a collaborative course. (See Projects page)",
 
     "about.exp5.title": "WIP",
     "about.exp5.date": "Other experiences are in progress",
