@@ -1,23 +1,36 @@
 :root{
-  --bg:#0b0d12;
-  --surface:#131827;
-  --surface-2:#171c2f;
-  --text:#f5f7fb;
-  --muted:#b6bfcc;
-  --line:rgba(255,255,255,.08);
-  --accent:#7a6bff;
-  --accent-2:#4bd0ff;
-  --shadow:0 24px 50px rgba(5,8,20,.45);
+  --bg: #09090b;
+  --surface: #121214;
+  --surface-2: #1e1e24;
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
+  --line: rgba(255, 255, 255, 0.1);
+  --accent: #e4e4e7;
+  --accent-2: #3b82f6;
+  --shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
+html,body {
+  margin: 0;
+  padding: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  color:var(--text);
-  background:linear-gradient(160deg, #0b0d12 0%, #20245a 45%, #3c2d7a 70%, #11131c 100%);
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center top;
   background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 a{
@@ -39,7 +52,7 @@ a{
   top:0;
   z-index:10;
   backdrop-filter: blur(12px);
-  background:rgba(11,13,18,.85);
+  background:rgba(9, 9, 11, 0.85);
   border-bottom:1px solid var(--line);
 }
 
@@ -67,11 +80,11 @@ a{
 .logoMark{
   width:44px;
   height:44px;
-  border-radius:14px;
+  border-radius: 0;
   display:grid;
   place-items:center;
-  background:linear-gradient(135deg, rgba(122,107,255,.9), rgba(75,208,255,.8));
-  box-shadow:var(--shadow);
+  background:var(--accent-2);
+  box-shadow: none;
 }
 
 .logoText{
@@ -88,13 +101,13 @@ a{
   flex-wrap:wrap;
   background: rgba(255, 255, 255, 0.05);
   padding: 8px 12px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid var(--line);
 }
 
 .nav a{
   padding:8px 16px;
-  border-radius:999px;
+  border-radius: 0;
   border:1px solid transparent;
   color:var(--muted);
   transition:all .3s ease;
@@ -103,8 +116,8 @@ a{
 
 .nav a:hover, .nav a.active{
   color:var(--text);
-  border-color:rgba(122,107,255,.5);
-  background:rgba(122,107,255,.15);
+  border-color: var(--line);
+  background:rgba(255, 255, 255, 0.05);
 }
 
 /* =========================================
@@ -160,7 +173,7 @@ a{
   align-items:center;
   justify-content:center;
   padding:12px 18px;
-  border-radius:14px;
+  border-radius: 0;
   border:1px solid transparent;
   font-weight:600;
   transition:transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow .3s ease, border-color .3s ease, background .3s ease;
@@ -168,9 +181,9 @@ a{
 }
 
 .btn.primary{
-  background:linear-gradient(135deg, rgba(122,107,255,.9), rgba(75,208,255,.8));
+  background:var(--accent-2);
   color:#05070f;
-  box-shadow:var(--shadow);
+  box-shadow: none;
 }
 
 .btn.ghost{
@@ -182,7 +195,7 @@ a{
 .btn.small{
   padding:8px 12px;
   font-size:13px;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .btn:hover{
@@ -190,12 +203,12 @@ a{
 }
 
 .btn.primary:hover{
-  box-shadow: 0 10px 20px rgba(122,107,255,.4);
+  box-shadow: none;
 }
 
 .btn.ghost:hover{
   background:rgba(255,255,255,.08);
-  border-color:rgba(122,107,255,.5);
+  border-color: var(--line);
 }
 
 .meta{
@@ -222,16 +235,16 @@ a{
 .heroCard{
   background:var(--surface);
   border:1px solid var(--line);
-  border-radius:24px;
+  border-radius: 0;
   padding:28px;
-  box-shadow:var(--shadow);
+  box-shadow: none;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .heroCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 30px 60px rgba(5,8,20,.6);
-  border-color: rgba(122,107,255,.3);
+  box-shadow: none;
+  border-color: var(--line);
 }
 
 .heroCard h2{
@@ -253,15 +266,15 @@ a{
 
 .pill{
   padding:8px 14px;
-  border-radius:999px;
-  background:rgba(122,107,255,.15);
-  border:1px solid rgba(122,107,255,.4);
+  border-radius: 0;
+  background:rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
   font-size:13px;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .pill:hover {
-  background:rgba(122,107,255,.3);
+  background:rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
 }
 
@@ -335,17 +348,17 @@ a{
 
 .skillCard{
   padding:24px;
-  border-radius:18px;
+  border-radius: 0;
   border:1px solid var(--line);
   background:var(--surface);
-  box-shadow:var(--shadow);
+  box-shadow: none;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skillCard:hover {
   transform: translateY(-8px);
-  border-color: rgba(122,107,255,.5);
-  box-shadow: 0 15px 30px rgba(122,107,255,.15);
+  border-color: var(--line);
+  box-shadow: none;
 }
 
 .skillCard h3{
@@ -367,7 +380,7 @@ a{
 
 .experienceCard{
   padding:24px;
-  border-radius:18px;
+  border-radius: 0;
   border:1px solid var(--line);
   background:var(--surface);
   transition: transform 0.3s ease, background 0.3s ease;
@@ -376,7 +389,7 @@ a{
 .experienceCard:hover {
   transform: scale(1.02);
   background: var(--surface-2);
-  border-color: rgba(75,208,255,.4);
+  border-color: var(--line);
 }
 
 .experienceCard h3{
@@ -414,7 +427,7 @@ a{
 .projectCard {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 0;
   overflow: hidden;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
   height: 100%;
@@ -424,8 +437,8 @@ a{
 
 .projectCard:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 20px rgba(122,107,255,0.2);
-  border-color: rgba(122,107,255,.6);
+  box-shadow: none;
+  border-color: var(--line);
 }
 
 .projectImagePlaceholder {
@@ -445,7 +458,7 @@ a{
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(135deg, rgba(122,107,255,.2), rgba(75,208,255,.2));
+  background: rgba(255,255,255,0.05);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -541,14 +554,14 @@ a{
   width: 100%;
   height: 400px;
   background: #1e243a;
-  border-radius: 20px;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--muted);
   margin-bottom: 40px;
   border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 /* Vraies images/vidéos dans detail projet */
@@ -556,9 +569,9 @@ a{
   width: 100%;
   max-height: 500px;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 0;
   margin-bottom: 40px;
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .projectDescription {
@@ -606,7 +619,7 @@ a{
 .galleryImagePlaceholder {
   height: 250px;
   background: #1e243a;
-  border-radius: 12px;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -618,11 +631,11 @@ a{
    CONTACT
 ========================================= */
 .contact{
-  background:linear-gradient(135deg, rgba(122,107,255,.12), rgba(75,208,255,.08));
-  border-radius: 24px;
+  background:rgba(255,255,255,0.02);
+  border-radius: 0;
   margin: 0 24px 64px;
   padding: 48px;
-  border: 1px solid rgba(122,107,255,.2);
+  border: 1px solid var(--line);
 }
 
 .contactGrid{
@@ -713,4 +726,9 @@ a{
   .nav {
     justify-content: center;
   }
+}
+
+.heroContainer {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 60px;
 }
