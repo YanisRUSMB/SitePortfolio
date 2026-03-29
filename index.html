@@ -10,6 +10,11 @@
   <meta name="description" content="Portfolio de Yanis Reynaud, Game Developer (Unreal Engine, C++/Blueprint)." />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="logoportfolio.png">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 
 <body>
@@ -32,6 +37,12 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
           <span id="lang-switch-text">EN</span>
         </a>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
       </nav>
     </div>
   </header>
@@ -44,16 +55,10 @@
           Je me présente, Yanis, 21 ans. Après deux années d'échange universitaire, je suis actuellement en maîtrise de jeux vidéo à l'UQAC et à la recherche d'un stage. J'ai commencé l'informatique il y a 5 ans au lycée, et depuis, je continue d'explorer ce vaste univers !
         </p>
 
-        <div class="ctaRow center-cta" style="margin-top: 32px;">
-          <a class="btn primary" href="projets.html" data-i18n="home.hero.btn.projects">Voir mes projets</a>
+        <div class="ctaRow center-cta" style="margin-top: 32px; margin-bottom: 48px;">
           <a class="btn ghost" href="a-propos.html" data-i18n="home.hero.btn.about">En savoir plus sur moi</a>
         </div>
-      </div>
-    </section>
 
-    <section class="profile-section">
-      <div class="container">
-        <h3 style="margin-bottom: 24px; color: var(--muted); font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em;" data-i18n="home.skills.title">Mes outils de prédilection</h3>
         <div class="stack center-stack">
           <div class="pill">Unreal Engine</div>
           <div class="pill">C++</div>
@@ -76,7 +81,7 @@
         <div class="projectsGrid">
           <a href="projet-tropicmadness.html" class="projectCardLink">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;">
                 <img src="https://img.itch.zone/aW1nLzI1ODk0NjAxLnBuZw==/315x250%23c/gJnztp.png" alt="TropicMadness" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
@@ -89,7 +94,7 @@
 
           <a href="projet-moteurphysique.html" class="projectCardLink">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;"><img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Moteur Physique" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;"><img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Moteur Physique" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
               <div class="projectInfo">
                 <span class="project-badge" data-i18n="home.preview.badge.engine">Moteur Physique C++</span>
                 <h3>Moteur Physique</h3>
@@ -100,7 +105,7 @@
 
           <a href="projet-mytoolunreal.html" class="projectCardLink">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Tool Unreal" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Tool Unreal" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
               <div class="projectInfo">
                 <span class="project-badge" data-i18n="home.preview.badge.tool">Outil Éditeur</span>
                 <h3>Tool Unreal</h3>
@@ -150,7 +155,12 @@
     </div>
   </footer>
 
+  <script src="theme.js"></script>
   <script src="lang.js"></script>
   <script src="script.js"></script>
+
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+  </button>
 </body>
 </html>

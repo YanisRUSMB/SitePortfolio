@@ -10,6 +10,11 @@
   <meta name="description" content="Contactez Yanis Reynaud." />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="logoportfolio.png">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 
 <body>
@@ -32,6 +37,12 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
           <span id="lang-switch-text">EN</span>
         </a>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
       </nav>
     </div>
   </header>
@@ -80,7 +91,12 @@
     </div>
   </footer>
 
+  <script src="theme.js"></script>
   <script src="lang.js"></script>
   <script src="script.js"></script>
+
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+  </button>
 </body>
 </html>

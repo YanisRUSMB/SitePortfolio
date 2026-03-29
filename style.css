@@ -10,6 +10,23 @@
   --shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
 
+html[data-theme="light"] {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-2: #f4f4f5;
+  --text: #09090b;
+  --muted: #71717a;
+  --line: rgba(0, 0, 0, 0.1);
+  --accent: #18181b;
+  --accent-2: #2563eb;
+  --shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+html[data-theme="light"] body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
 *{box-sizing:border-box}
 html,body {
   margin: 0;
@@ -594,7 +611,9 @@ a{
 }
 
 .projectImagePlaceholder {
-  height: 200px;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
   background: #1e243a;
   display: flex;
   align-items: center;
@@ -910,7 +929,6 @@ a{
 }
 
 .heroContainer {
-  border-bottom: 1px solid var(--line);
   padding-bottom: 60px;
 }
 
@@ -926,4 +944,96 @@ a{
     border-radius: 12px;
     align-self: flex-start;
     max-width: max-content;
+}
+
+
+/* Theme Switch */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 44px;
+}
+.theme-switch input {
+  display: none;
+}
+.slider {
+  background-color: var(--surface-2);
+  border: 1px solid var(--line);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 24px;
+}
+.slider:before {
+  background-color: var(--text);
+  bottom: 3px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+input:checked + .slider:before {
+  transform: translateX(18px);
+  background-color: #fff;
+}
+
+/* Fix for light mode specific images and content if needed */
+html[data-theme="light"] .logoMarkImg {
+  filter: invert(1);
+}
+html[data-theme="light"] .projectImagePlaceholder,
+html[data-theme="light"] .projectMainMediaPlaceholder {
+  background: #e2e8f0;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: var(--surface);
+  transform: translateY(-3px);
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
 }
