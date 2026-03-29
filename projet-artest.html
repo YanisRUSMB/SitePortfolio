@@ -11,6 +11,11 @@
 <meta content="Détails du projet Prototype UE par Yanis Reynaud." name="description"/>
 <link href="style.css" rel="stylesheet"/>
 <link href="logoportfolio.png" rel="icon" type="image/png"/>
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 <body>
 <header class="siteHeader">
@@ -100,7 +105,12 @@
       <span data-i18n="footer.updated">Dernière mise à jour : <span id="updated"></span></span>
     </div>
   </footer>
-<script src="lang.js"></script>
+<script src="theme.js"></script>
+  <script src="lang.js"></script>
   <script src="script.js"></script>
+
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+  </button>
 </body>
 </html>

@@ -10,6 +10,11 @@
   <meta name="description" content="Découvrez les projets de Yanis Reynaud." />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="logoportfolio.png">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 
 <body>
@@ -32,6 +37,12 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
           <span id="lang-switch-text">EN</span>
         </a>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
       </nav>
     </div>
   </header>
@@ -56,7 +67,7 @@
         <div class="projectsGrid">
           <a href="projet-tropicmadness.html" class="projectCardLink" data-category="jeux">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;">
                 <img src="https://img.itch.zone/aW1nLzI1ODk0NjAxLnBuZw==/315x250%23c/gJnztp.png" alt="TropicMadness" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
@@ -69,7 +80,7 @@
 
           <a href="projet-artest.html" class="projectCardLink" data-category="tests">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;"><img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?auto=format&fit=crop&w=600&q=80" alt="AR Test" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;"><img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?auto=format&fit=crop&w=600&q=80" alt="AR Test" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
               <div class="projectInfo">
                 <span class="project-badge" data-i18n="projects.badge.tests">Test Technique</span>
                 <h3 style="color: var(--accent-2);">AR Test</h3>
@@ -80,7 +91,7 @@
 
           <a href="projet-moteurphysique.html" class="projectCardLink" data-category="tests">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;"><img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Moteur Physique" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;"><img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Moteur Physique" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
               <div class="projectInfo">
                 <span class="project-badge" data-i18n="projects.badge.tests">Test Technique</span>
                 <h3 style="color: var(--accent-2);">Moteur Physique</h3>
@@ -91,7 +102,7 @@
 
           <a href="projet-onelaststake.html" class="projectCardLink" data-category="jeux">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;">
                 <img src="https://img.itch.zone/aW1nLzIzNTc4MDA2LnBuZw==/315x250%23c/7AB5EW.png" alt="One Last Stake" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
@@ -104,7 +115,7 @@
 
           <a href="projet-apinodedrones.html" class="projectCardLink" data-category="tests">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="API Node" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="API Node" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
               <div class="projectInfo">
                 <span class="project-badge" data-i18n="projects.badge.tests">Test Technique</span>
                 <h3 style="color: var(--accent-2);">API Node Drones Web</h3>
@@ -115,7 +126,7 @@
 
           <a href="projet-crittereats.html" class="projectCardLink" data-category="jeux">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;">
                 <img src="https://img.itch.zone/aW1nLzIwNDE3MTkwLnBuZw==/315x250%23c/gZKaVi.png" alt="Critter Eats" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
@@ -128,7 +139,7 @@
 
           <a href="projet-bedroomrumble.html" class="projectCardLink" data-category="jeux">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;">
                 <img src="https://img.itch.zone/aW1nLzIwMTA4ODM4LnBuZw==/315x250%23c/XgFjfd.png" alt="Bedroom Rumble" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
@@ -141,7 +152,7 @@
 
           <a href="projet-mytoolunreal.html" class="projectCardLink" data-category="outils">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Tool Unreal" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Tool Unreal" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" /></div>
               <div class="projectInfo">
                 <span class="project-badge" data-i18n="projects.badge.outils">Outil Éditeur</span>
                 <h3 style="color: var(--accent-2);">Tool Unreal</h3>
@@ -152,7 +163,7 @@
 
           <a href="projet-bloodyescape.html" class="projectCardLink" data-category="jeux">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: 250px;">
                 <img src="https://img.itch.zone/aW1nLzE4MTYyNzEzLnBuZw==/315x250%23c/7XCcNE.png" alt="BloodyEscape" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
@@ -201,7 +212,12 @@
     </div>
   </footer>
 
+  <script src="theme.js"></script>
   <script src="lang.js"></script>
   <script src="script.js"></script>
+
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+  </button>
 </body>
 </html>
