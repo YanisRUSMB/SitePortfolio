@@ -146,6 +146,39 @@ a{
   align-items:start;
 }
 
+.centered-hero {
+  text-align: center;
+  padding: 100px 0 60px;
+}
+
+.centered-hero h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin: 16px auto 24px;
+  max-width: 900px;
+}
+
+.centered-hero .lead {
+  max-width: 700px;
+  margin: 0 auto 36px;
+  font-size: 20px;
+}
+
+.center-stack {
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.center-cta {
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.center-links {
+  justify-content: center;
+  margin-top: 24px;
+}
+
 .heroCopy h1{
   font-size:46px;
   line-height:1.1;
@@ -775,4 +808,18 @@ a{
 .heroContainer {
   border-bottom: 1px solid var(--line);
   padding-bottom: 60px;
+}
+
+.project-badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-2);
+    border: 1px solid var(--accent-2);
+    padding: 2px 8px;
+    border-radius: 12px;
+    align-self: flex-start;
+    max-width: max-content;
 }
