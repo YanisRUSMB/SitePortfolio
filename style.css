@@ -419,6 +419,41 @@ a{
 }
 
 /* =========================================
+   PROJECT FILTERS
+========================================= */
+.projectFilters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.filterBtn {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+  background: var(--surface-2);
+  border-color: var(--muted);
+}
+
+.filterBtn.active {
+  background: var(--accent-2);
+  color: #fff;
+  border-color: var(--accent-2);
+}
+
+/* =========================================
    PROJECT CARDS (Projets)
 ========================================= */
 .projectsGrid {
