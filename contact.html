@@ -24,10 +24,14 @@
       </a>
 
       <nav class="nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="projets.html">Projets</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="projets.html" data-i18n="nav.projects">Projets</a>
+        <a href="a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
+        <a href="#" id="lang-toggle" style="margin-left: auto; border-left: 1px solid var(--line); padding-left: 18px; display: flex; align-items: center; gap: 6px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span id="lang-switch-text">EN</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -35,22 +39,21 @@
   <main id="top">
     <section class="section pageHeader">
       <div class="container">
-        <h1>Me Contacter</h1>
-        <p class="lead">Je suis ouvert aux opportunités, n'hésitez pas à m'écrire.</p>
+        <h1 data-i18n="contact.header.title">Me Contacter</h1>
+        <p class="lead" data-i18n="contact.header.desc">Je suis ouvert aux opportunités, n'hésitez pas à m'écrire.</p>
       </div>
     </section>
 
     <section id="contact" class="section contact">
       <div class="container contactGrid">
         <div>
-          <h2>Prêt à discuter ?</h2>
-          <p>Pour un stage, une collaboration ou juste échanger, vous pouvez utiliser les liens ci-contre.</p>
+          <h2 data-i18n="contact.box.title">Prêt à discuter ?</h2>
+          <p data-i18n="contact.box.desc">Pour un stage, une collaboration ou juste échanger, vous pouvez utiliser les liens ci-contre.</p>
         </div>
         <div class="contactActions">
-          <a class="btn primary" href="mailto:reynaud.yanis@gmail.com">Email</a>
+          <a class="btn primary" href="mailto:reynaud.yanis.pro@gmail.com" data-i18n="contact.box.email.label">Email</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/yanis-reynaud-629306259/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn ghost" href="https://github.com/YanisRUSMB" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn ghost" href="[LIEN_CV_PDF]" target="_blank" rel="noopener">CV (PDF)</a>
         </div>
       </div>
     </section>
@@ -58,11 +61,12 @@
 
   <footer class="footer">
     <div class="container footerInner">
-      <span>© <span id="year"></span> Yanis Reynaud</span>
-      <span>Dernière mise à jour : <span id="updated"></span></span>
+      <span data-i18n="footer.rights">© <span id="year"></span> Yanis Reynaud</span>
+      <span data-i18n="footer.updated">Dernière mise à jour : <span id="updated"></span></span>
     </div>
   </footer>
 
+  <script src="lang.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

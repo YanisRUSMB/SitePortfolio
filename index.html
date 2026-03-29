@@ -24,10 +24,14 @@
       </a>
 
       <nav class="nav" aria-label="Navigation principale">
-        <a href="index.html" class="active">Accueil</a>
-        <a href="projets.html">Projets</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="active" data-i18n="nav.home">Accueil</a>
+        <a href="projets.html" data-i18n="nav.projects">Projets</a>
+        <a href="a-propos.html" data-i18n="nav.about">À propos</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="#" id="lang-toggle" style="margin-left: auto; border-left: 1px solid var(--line); padding-left: 18px; display: flex; align-items: center; gap: 6px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span id="lang-switch-text">EN</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -35,13 +39,14 @@
   <main id="top">
     <section class="hero centered-hero">
       <div class="container heroContainer">
-        <p class="lead">
+        <h1 data-i18n="home.hero.title">Développeur Gameplay · Réseau · Moteur</h1>
+        <p class="lead" data-i18n="home.hero.intro">
           Je me présente, Yanis, 21 ans. Après deux années d'échange universitaire, je suis actuellement en maîtrise de jeux vidéo à l'UQAC et à la recherche d'un stage. J'ai commencé l'informatique il y a 5 ans au lycée, et depuis, je continue d'explorer ce vaste univers !
         </p>
 
         <div class="ctaRow center-cta" style="margin-top: 32px;">
-          <a class="btn primary" href="projets.html">Voir mes projets</a>
-          <a class="btn ghost" href="a-propos.html">En savoir plus sur moi</a>
+          <a class="btn primary" href="projets.html" data-i18n="home.hero.btn.projects">Voir mes projets</a>
+          <a class="btn ghost" href="a-propos.html" data-i18n="home.hero.btn.about">En savoir plus sur moi</a>
         </div>
       </div>
     </section>
@@ -64,8 +69,8 @@
     <section class="section alt">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Aperçu de mes travaux</h2>
-          <p>Un jeu, un test de moteur, et un outil. Découvrez la liste complète dans la section Projets.</p>
+          <h2 data-i18n="home.preview.title">Aperçu de mes travaux</h2>
+          <p data-i18n="home.preview.desc">Un jeu, un test de moteur, et un outil. Découvrez la liste complète dans la section Projets.</p>
         </div>
         <div class="projectsGrid">
           <a href="projet-tropicmadness.html" class="projectCardLink">
@@ -74,9 +79,9 @@
                 <img src="https://img.itch.zone/aW1nLzI1ODk0NjAxLnBuZw==/315x250%23c/gJnztp.png" alt="TropicMadness" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <span class="project-badge">Jeu Vidéo</span>
+                <span class="project-badge" data-i18n="home.preview.badge.game">Jeu Vidéo</span>
                 <h3>TropicMadness</h3>
-                <p>Vous incarnez un personnage prêt à partir pour l'escapade ultime. Vous vous attendez au vol le plus calme de votre vie en direction d'une île paradisiaque, mais les choses risquent de ne pas se passer comme prévu...</p>
+                <p data-i18n="home.preview.card1.desc">Vous incarnez un personnage prêt à partir pour l'escapade ultime. Vous vous attendez au vol le plus calme de votre vie en direction d'une île paradisiaque, mais les choses risquent de ne pas se passer comme prévu...</p>
               </div>
             </div>
           </a>
@@ -87,9 +92,9 @@
                 <span style="color: #a1a1aa; font-family: Inter; font-size: 14px;">Image / Vidéo</span>
               </div>
               <div class="projectInfo">
-                <span class="project-badge">Moteur Physique C++</span>
+                <span class="project-badge" data-i18n="home.preview.badge.engine">Moteur Physique C++</span>
                 <h3>Moteur Physique</h3>
-                <p>Projet de création d'un moteur physique en C++ réalisé dans le cadre d'un cours de math-physique à l'UQAC. Ce moteur gère la physique 3D basique.</p>
+                <p data-i18n="home.preview.card2.desc">Projet de création d'un moteur physique en C++ réalisé dans le cadre d'un cours de math-physique à l'UQAC. Ce moteur gère la physique 3D basique.</p>
               </div>
             </div>
           </a>
@@ -100,15 +105,15 @@
                 <span style="color: #a1a1aa; font-family: Inter; font-size: 14px;">Image / Vidéo</span>
               </div>
               <div class="projectInfo">
-                <span class="project-badge">Outil Éditeur</span>
+                <span class="project-badge" data-i18n="home.preview.badge.tool">Outil Éditeur</span>
                 <h3>Tool Unreal</h3>
-                <p>Outil utilitaire pour Unreal Engine permettant de faciliter la gestion et l'organisation des projets au sein du moteur.</p>
+                <p data-i18n="home.preview.card3.desc">Outil utilitaire pour Unreal Engine permettant de faciliter la gestion et l'organisation des projets au sein du moteur.</p>
               </div>
             </div>
           </a>
         </div>
         <div class="centerAction" style="margin-top: 48px; text-align: center;">
-          <a class="btn ghost" href="projets.html">Voir tous mes projets</a>
+          <a class="btn ghost" href="projets.html" data-i18n="home.preview.btn.all">Voir tous mes projets</a>
         </div>
       </div>
     </section>
@@ -117,8 +122,8 @@
     <section class="section" style="padding-bottom: 80px;">
       <div class="container">
         <div class="contact" style="margin: 0; text-align: center; border-radius: 12px; padding: 56px 32px;">
-          <h2>Prêt à collaborer sur votre prochain projet de jeu ou à discuter d'une opportunité de stage ?</h2>
-          <p style="color: var(--muted); margin-bottom: 32px; font-size: 18px;">N'hésitez pas à me contacter directement !</p>
+          <h2 data-i18n="home.contact.title">Prêt à collaborer sur votre prochain projet de jeu ou à discuter d'une opportunité de stage ?</h2>
+          <p style="color: var(--muted); margin-bottom: 32px; font-size: 18px;" data-i18n="home.contact.desc">N'hésitez pas à me contacter directement !</p>
           <div class="center-cta">
             <a class="btn primary" href="mailto:reynaud.yanis.pro@gmail.com">reynaud.yanis.pro@gmail.com</a>
           </div>
@@ -129,7 +134,7 @@
 
   <footer class="footer">
     <div class="container footerInner">
-      <span>© <span id="year"></span> Yanis Reynaud</span>
+      <span data-i18n="footer.rights">© <span id="year"></span> Yanis Reynaud</span>
       <div class="footerSocials">
         <a href="https://github.com/YanisRUSMB" target="_blank" rel="noopener" aria-label="GitHub">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A4.8 4.8 0 0 0 8 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -144,10 +149,11 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>
         </a>
       </div>
-      <span>Dernière mise à jour : <span id="updated"></span></span>
+      <span data-i18n="footer.updated">Dernière mise à jour : <span id="updated"></span></span>
     </div>
   </footer>
 
+  <script src="lang.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

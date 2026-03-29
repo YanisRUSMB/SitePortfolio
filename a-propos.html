@@ -24,10 +24,14 @@
       </a>
 
       <nav class="nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="projets.html">Projets</a>
-        <a href="a-propos.html" class="active">À propos</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="projets.html" data-i18n="nav.projects">Projets</a>
+        <a href="a-propos.html" class="active" data-i18n="nav.about">À propos</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="#" id="lang-toggle" style="margin-left: auto; border-left: 1px solid var(--line); padding-left: 18px; display: flex; align-items: center; gap: 6px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span id="lang-switch-text">EN</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -35,8 +39,8 @@
   <main id="top">
     <section class="section pageHeader">
       <div class="container">
-        <h1>À propos de moi</h1>
-        <p class="lead">Découvrez mon parcours, mes expériences et les compétences techniques que j'ai développées.</p>
+        <h1 data-i18n="about.header.title">À propos de moi</h1>
+        <p class="lead" data-i18n="about.header.desc">Découvrez mon parcours, mes expériences et les compétences techniques que j'ai développées.</p>
       </div>
     </section>
 
@@ -71,8 +75,8 @@
     <section id="langages" class="section">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Mes Langages & Outils</h2>
-          <p>Aperçu de mes maîtrises techniques par niveau de compétence.</p>
+          <h2 data-i18n="about.skills.title">Mes Langages & Outils</h2>
+          <p data-i18n="about.skills.desc">Aperçu de mes maîtrises techniques par niveau de compétence.</p>
         </div>
 
         <div class="skills-bars-container">
@@ -198,35 +202,35 @@
     <section id="experiences" class="section alt">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Expériences</h2>
-          <p>Une sélection d’expériences, stages et projets marquants.</p>
+          <h2 data-i18n="about.exp.title">Expériences</h2>
+          <p data-i18n="about.exp.desc">Une sélection d’expériences, stages et projets marquants.</p>
         </div>
 
         <div class="experienceGrid">
           <div class="experienceCard">
-            <h3>Maîtrise — Développement de jeux vidéo</h3>
-            <span>UQAC — en cours</span>
-            <p>Gameplay, IA, optimisation et prototypage.</p>
+            <h3 data-i18n="about.exp1.title">Maîtrise — Développement de jeux vidéo</h3>
+            <span data-i18n="about.exp1.date">UQAC — en cours</span>
+            <p data-i18n="about.exp1.desc">Gameplay, IA, optimisation et prototypage.</p>
           </div>
           <div class="experienceCard">
-            <h3>Stage / alternance</h3>
-            <span>[Peut-être chez vous?]</span>
-            <p>Responsabilités : systèmes de jeu, tools, UI.</p>
+            <h3 data-i18n="about.exp2.title">Stage / alternance</h3>
+            <span data-i18n="about.exp2.date">[Peut-être chez vous?]</span>
+            <p data-i18n="about.exp2.desc">Responsabilités : systèmes de jeu, tools, UI.</p>
           </div>
           <div class="experienceCard">
-            <h3>Game jam</h3>
-            <span>WonderJam — 2025 - Automne</span>
-            <p>Roguelike basé sur le jeu de carte "La BATAILLE".</p>
+            <h3 data-i18n="about.exp3.title">Game jam</h3>
+            <span data-i18n="about.exp3.date">WonderJam — 2025 - Automne</span>
+            <p data-i18n="about.exp3.desc">Roguelike basé sur le jeu de carte "La BATAILLE".</p>
           </div>
           <div class="experienceCard">
-            <h3>Projet étudiant</h3>
-            <span>Prototype UE — 2025 - Hiver</span>
-            <p>Jeu dans le cadre d'un cours en association avec le NAD-UQAC.</p>
+            <h3 data-i18n="about.exp4.title">Projet étudiant</h3>
+            <span data-i18n="about.exp4.date">Prototype UE — 2025 - Hiver</span>
+            <p data-i18n="about.exp4.desc">Jeu dans le cadre d'un cours en association avec le NAD-UQAC.</p>
           </div>
           <div class="experienceCard">
-            <h3>WIP</h3>
-            <span>D'autres expériences sont en cours</span>
-            <p>Revenez plus tard !</p>
+            <h3 data-i18n="about.exp5.title">WIP</h3>
+            <span data-i18n="about.exp5.date">D'autres expériences sont en cours</span>
+            <p data-i18n="about.exp5.desc">Revenez plus tard !</p>
           </div>
         </div>
       </div>
@@ -235,11 +239,12 @@
 
   <footer class="footer">
     <div class="container footerInner">
-      <span>© <span id="year"></span> Yanis Reynaud</span>
-      <span>Dernière mise à jour : <span id="updated"></span></span>
+      <span data-i18n="footer.rights">© <span id="year"></span> Yanis Reynaud</span>
+      <span data-i18n="footer.updated">Dernière mise à jour : <span id="updated"></span></span>
     </div>
   </footer>
 
+  <script src="lang.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
