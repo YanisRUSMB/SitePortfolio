@@ -177,6 +177,8 @@ a{
 .center-stack {
   justify-content: center;
   margin-bottom: 36px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .center-cta {
