@@ -757,9 +757,29 @@ a{
 .footerInner{
   display:flex;
   flex-wrap:wrap;
+  align-items: center;
   justify-content:space-between;
-  gap:12px;
+  gap:20px;
   font-size: 14px;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footerSocials a {
+  color: var(--muted);
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerSocials a:hover {
+  color: var(--text);
+  transform: translateY(-3px);
 }
 
 /* =========================================
@@ -814,6 +834,15 @@ a{
   }
   .nav {
     justify-content: center;
+  }
+  .footerInner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footerSocials {
+    order: -1;
+    margin-bottom: 12px;
   }
 }
 
