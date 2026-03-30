@@ -101,6 +101,7 @@ const translations = {
     "project.detail.role": "Rôle",
     "project.detail.team": "Équipe",
     "project.detail.duration": "Contexte",
+        "project.context.title": "À propos de ce projet",
 
     // === Dates / Months ===
     "date.month.janvier": "Janvier",
@@ -278,6 +279,7 @@ const translations = {
     "project.detail.role": "Role",
     "project.detail.team": "Team",
     "project.detail.duration": "Context",
+        "project.context.title": "About this project",
 
     // === Dates / Months ===
     "date.month.janvier": "January",
