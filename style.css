@@ -995,9 +995,9 @@ input:checked + .slider:before {
 }
 
 /* Fix for light mode specific images and content if needed */
-html[data-theme="light"] .logoMarkImg {
+/* html[data-theme="light"] .logoMarkImg {
   filter: invert(1);
-}
+} */
 html[data-theme="light"] .projectImagePlaceholder,
 html[data-theme="light"] .projectMainMediaPlaceholder {
   background: #e2e8f0;
