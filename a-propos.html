@@ -35,34 +35,50 @@
   <main id="top">
     <section class="section pageHeader">
       <div class="container">
-        <h1>À propos de moi</h1>
-        <p class="lead">Découvrez mon parcours, mes expériences et les compétences techniques que j'ai développées.</p>
+        <div class="aboutHeaderLayout" style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap;">
+          <div class="aboutText" style="flex: 1; min-width: 300px;">
+            <h1>À propos de moi</h1>
+            <p class="lead" style="margin-bottom: 2rem;">Développeur gameplay passionné, je conçois et implémente des systèmes de jeu, des outils et des intelligences artificielles.</p>
+            <p style="color: #a1a1aa; line-height: 1.6; margin-bottom: 2rem;">
+              Actuellement étudiant à l'UQAC en maîtrise développement de jeux vidéo, je suis constamment à la recherche de nouveaux défis techniques. Mon approche est centrée sur l'expérience joueur, la performance du code et la création d'outils pour faciliter le travail d'équipe.
+            </p>
+            <div class="cvButtons" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="cv-visuel.pdf" target="_blank" class="btn primary" style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                CV Visuel
+              </a>
+              <a href="cv-brut.pdf" target="_blank" class="btn ghost" style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                CV Brut
+              </a>
+            </div>
+          </div>
+          <div class="aboutImage" style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+            <img src="profile.png" alt="Yanis Reynaud" style="width: 100%; max-width: 400px; border-radius: 1rem; border: 1px solid #2a2a35;" />
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="competences" class="section alt">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Compétences</h2>
-          <p>Tech stack, méthodes et outils que j’utilise régulièrement.</p>
+          <h2>Mes Compétences</h2>
+          <p>Technologies, langages et outils que je maîtrise.</p>
         </div>
 
-        <div class="skillsGrid">
-          <div class="skillCard">
-            <h3>Gameplay</h3>
-            <p>Systèmes de combat, interactions, UI et boucle de jeu.</p>
+        <div class="skillsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+          <div class="skillCard" style="background: #1e1e24; border: 1px solid #2a2a35; border-radius: 1rem; padding: 2rem; transition: transform 0.3s ease, border-color 0.3s ease;">
+            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;">Programmation & Moteurs</h3>
+            <p style="color: #a1a1aa; line-height: 1.6;">C++<br>C#<br>Unreal Engine 5 (C++ & Blueprints)<br>Unity</p>
           </div>
-          <div class="skillCard">
-            <h3>IA &amp; Tools</h3>
-            <p>Behavior Trees, navigation, outils de debug et profils.</p>
+          <div class="skillCard" style="background: #1e1e24; border: 1px solid #2a2a35; border-radius: 1rem; padding: 2rem; transition: transform 0.3s ease, border-color 0.3s ease;">
+            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;">Gameplay & Systèmes</h3>
+            <p style="color: #a1a1aa; line-height: 1.6;">Systèmes de combat<br>Behavior Trees & IA<br>Interfaces (UI)<br>Outils internes & Debug</p>
           </div>
-          <div class="skillCard">
-            <h3>Tech</h3>
-            <p>C++ · Blueprint · Git/Perforce · Visual Studio/Rider.</p>
-          </div>
-          <div class="skillCard">
-            <h3>Réseau</h3>
-            <p>Optimisation, lobby, re-sync, duplication.</p>
+          <div class="skillCard" style="background: #1e1e24; border: 1px solid #2a2a35; border-radius: 1rem; padding: 2rem; transition: transform 0.3s ease, border-color 0.3s ease;">
+            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;">Outils de Production</h3>
+            <p style="color: #a1a1aa; line-height: 1.6;">Git & Perforce<br>Visual Studio & Rider<br>Jira & Trello<br>Méthodes Agiles</p>
           </div>
         </div>
       </div>
@@ -71,37 +87,53 @@
     <section id="experiences" class="section">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Expériences</h2>
-          <p>Une sélection d’expériences, stages et projets marquants.</p>
+          <h2>Parcours & Expériences</h2>
+          <p>Mon parcours académique et mes réalisations en équipe.</p>
         </div>
 
-        <div class="experienceGrid">
-          <div class="experienceCard">
-            <h3>Maîtrise — Développement de jeux vidéo</h3>
-            <span>UQAC — en cours</span>
-            <p>Gameplay, IA, optimisation et prototypage.</p>
+        <div class="timeline" style="position: relative; max-width: 800px; margin: 0 auto;">
+          <div class="timeline-line" style="position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: #2a2a35;"></div>
+
+          <div class="timeline-item" style="position: relative; padding-left: 60px; margin-bottom: 3rem;">
+            <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #3b82f6; box-shadow: 0 0 0 4px #121214;"></div>
+            <span class="timeline-date" style="display: block; color: #3b82f6; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">2024 - Présent</span>
+            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;">Maîtrise — Développement de jeux vidéo</h3>
+            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;">UQAC (Université du Québec à Chicoutimi)</span>
+            <p style="color: #a1a1aa; line-height: 1.6;">Spécialisation en programmation Gameplay, IA, optimisation et création d'outils. Projets réalisés en équipe avec des étudiants artistes et designers.</p>
           </div>
-          <div class="experienceCard">
-            <h3>Stage / alternance</h3>
-            <span>[Peut-être chez vous?]</span>
-            <p>Responsabilités : systèmes de jeu, tools, UI.</p>
+
+          <div class="timeline-item" style="position: relative; padding-left: 60px; margin-bottom: 3rem;">
+            <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #a1a1aa; box-shadow: 0 0 0 4px #121214;"></div>
+            <span class="timeline-date" style="display: block; color: #a1a1aa; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Automne 2024</span>
+            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;">WonderJam - Game Jam</h3>
+            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;">UQAC</span>
+            <p style="color: #a1a1aa; line-height: 1.6;">Développement du jeu "One Last Stake" en 48h. Implémentation du système de combat inspiré de la bataille, intégration de l'UI et gestion du flow de jeu en C++ sous Unreal Engine.</p>
           </div>
-          <div class="experienceCard">
-            <h3>Game jam</h3>
-            <span>WonderJam — 2025 - Automne</span>
-            <p>Roguelike basé sur le jeu de carte "La BATAILLE".</p>
+
+          <div class="timeline-item" style="position: relative; padding-left: 60px; margin-bottom: 3rem;">
+            <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #a1a1aa; box-shadow: 0 0 0 4px #121214;"></div>
+            <span class="timeline-date" style="display: block; color: #a1a1aa; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Hiver 2025</span>
+            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;">Projet Multidisciplinaire (NAD-UQAC)</h3>
+            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;">Projet étudiant majeur</span>
+            <p style="color: #a1a1aa; line-height: 1.6;">Développement d'un jeu complet en équipe. Responsable de la création d'outils internes pour l'équipe artistique, et de l'implémentation de la physique avancée du jeu.</p>
           </div>
-          <div class="experienceCard">
-            <h3>Projet étudiant</h3>
-            <span>Prototype UE — 2025 - Hiver</span>
-            <p>Jeu dans le cadre d'un cours en association avec le NAD-UQAC.</p>
-          </div>
-          <div class="experienceCard">
-            <h3>WIP</h3>
-            <span>D'autres expériences sont en cours</span>
-            <p>Revenez plus tard !</p>
+
+          <div class="timeline-item" style="position: relative; padding-left: 60px;">
+            <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #3b82f6; box-shadow: 0 0 0 4px #121214;"></div>
+            <span class="timeline-date" style="display: block; color: #3b82f6; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">2026</span>
+            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;">À la recherche d'un stage / emploi</h3>
+            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;">Industrie du Jeu Vidéo</span>
+            <p style="color: #a1a1aa; line-height: 1.6;">Je suis actuellement à la recherche d'une opportunité en tant que Programmeur Gameplay / Généraliste pour mettre en pratique mes compétences sur un projet professionnel.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section alt" style="text-align: center;">
+      <div class="container">
+        <h2 style="font-family: Outfit; font-size: 2rem; color: #fff; margin-bottom: 1rem;">Prêt à travailler ensemble ?</h2>
+        <p style="color: #a1a1aa; max-width: 600px; margin: 0 auto 2rem auto; line-height: 1.6;">Je suis toujours ouvert aux nouvelles opportunités et aux discussions passionnantes autour du jeu vidéo.</p>
+        <a href="contact.html" class="btn primary">Me contacter</a>
       </div>
     </section>
   </main>
