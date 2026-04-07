@@ -11,11 +11,6 @@
 <meta content="Détails du projet Prototype UE par Yanis Reynaud." name="description"/>
 <link href="style.css" rel="stylesheet"/>
 <link href="logoportfolio.png" rel="icon" type="image/png"/>
-
-  <script>
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  </script>
 </head>
 <body>
 <header class="siteHeader">
@@ -28,14 +23,10 @@
 </span>
 </a>
 <nav aria-label="Navigation principale" class="nav">
-        <a href="index.html"  data-i18n="nav.home">Accueil</a>
-        <a href="projets.html" class="active" data-i18n="nav.projects">Projets</a>
-        <a href="a-propos.html"  data-i18n="nav.about">À propos</a>
-        <a href="contact.html"  data-i18n="nav.contact">Contact</a>
-        <a href="#" id="lang-toggle" style="margin-left: auto; border-left: 1px solid var(--line); padding-left: 18px; display: flex; align-items: center; gap: 6px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-          <span id="lang-switch-text">EN</span>
-        </a>
+<a href="index.html">Accueil</a>
+<a class="active" href="projets.html">Projets</a>
+<a href="a-propos.html">À propos</a>
+<a href="contact.html">Contact</a>
 </nav>
       <div class="langToggle" style="margin-left: 1.5rem; display: flex; background: #2a2a35; border-radius: 0.5rem; overflow: hidden; padding: 2px;">
         <button id="globalLangFr" class="active" style="background: #3b82f6; color: #fff; border: none; padding: 0.25rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; font-family: Inter; font-weight: 500; transition: all 0.2s;">FR</button>
@@ -47,9 +38,9 @@
 <main id="top">
 <section class="section projectHeaderSection">
 <div class="container">
-<a class="backLink" href="projets.html" data-i18n="project.detail.back">← Retour aux projets</a>
+<a class="backLink" href="projets.html">← Retour aux projets</a>
 <div class="projectHeaderTitleRow">
-<h1>AR Test <span style="font-size: 0.5em; color: var(--text-muted); font-weight: normal; margin-left: 10px;"><span data-i18n="projects.card.date.prefix"></span><span data-i18n="date.month.decembre">Décembre</span> 2025</span></h1>
+<h1>AR Test</h1>
 <div class="projectExternalLinks">
 <a class="btn small ghost" href="https://github.com/YanisRUSMB/AR_Test" rel="noopener" target="_blank">Voir sur GitHub</a>
 <!-- Ajouter le lien itch.io si disponible -->
@@ -64,46 +55,24 @@
 <section class="section projectContentSection pt-0">
 <div class="container">
 <!-- Remplacer ceci par une balise img ou video plus tard -->
-<img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?auto=format&fit=crop&w=1200&q=80" alt="Aperçu du projet" class="projectMainMedia" />
+<div class="projectMainMediaPlaceholder">AR Test - Image / Vidéo à ajouter</div>
 <div class="projectDescription">
-<h2 data-i18n="project.context.title">À propos de ce projet</h2>
-<p><span data-i18n="project.ar.context">Application mobile de remise à niveau avec des quêtes pour un profil type.</span></p><h3 data-i18n="project.detail.contrib.title">Mes contributions</h3><ul>
-<li data-i18n="project.ar.c1">Implémentation du suivi de trajet en temps réel en utilisant l'API Google Maps.</li>
-<li data-i18n="project.ar.c2">Gestion des requêtes back-end et base de données via l'API Firebase.</li>
-<li data-i18n="project.ar.c3">Intégration et gestion de l'appareil photo en direct pour l'affichage de la réalité augmentée.</li>
+<h2>À propos de ce projet</h2>
+<p>Application mobile de remise à niveau avec des quêtes pour un profil type.</p><h3>Mes contributions</h3><ul>
+<li>Implémentation du suivi de trajet en temps réel en utilisant l'API Google Maps.</li>
+<li>Gestion des requêtes back-end et base de données via l'API Firebase.</li>
+<li>Intégration et gestion de l'appareil photo en direct pour l'affichage de la réalité augmentée.</li>
 </ul>
 </div>
 </div>
 </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container footerInner">
-      <span data-i18n="footer.rights">© <span id="year"></span> Yanis Reynaud</span>
-      <div class="footerSocials">
-        <a href="https://github.com/YanisRUSMB" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A4.8 4.8 0 0 0 8 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/yanis-reynaud-629306259/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-        <a href="https://linktr.ee/reynaud.yanis" target="_blank" rel="noopener" aria-label="Linktree">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-2"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
-        </a>
-        <a href="https://yaphado.itch.io" target="_blank" rel="noopener" aria-label="Itch.io">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>
-        </a>
-      </div>
-      <span data-i18n="footer.updated">Dernière mise à jour : <span id="updated"></span></span>
-    </div>
-  </footer>
-<script src="theme.js"></script>
-  <script src="lang.js"></script>
-  <script src="script.js"></script>
-
-  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
-  </button>
+</main>
+<footer class="footer">
+<div class="container footerInner">
+<span>© <span id="year"></span> Yanis Reynaud</span>
+<span>Dernière mise à jour : <span id="updated"></span></span>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
