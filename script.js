@@ -92,3 +92,52 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// ==========================================
+// GLOBAL LANGUAGE TOGGLE
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+    const globalFr = document.getElementById('globalLangFr');
+    const globalEn = document.getElementById('globalLangEn');
+
+    // Check local storage for preferred language, default to 'fr'
+    let currentLang = localStorage.getItem('siteLang') || 'fr';
+
+    function updateGlobalLanguageUI(lang) {
+        if (!globalFr || !globalEn) return;
+
+        if (lang === 'fr') {
+            globalFr.style.background = '#3b82f6';
+            globalFr.style.color = '#fff';
+            globalEn.style.background = 'transparent';
+            globalEn.style.color = '#a1a1aa';
+        } else {
+            globalEn.style.background = '#3b82f6';
+            globalEn.style.color = '#fff';
+            globalFr.style.background = 'transparent';
+            globalFr.style.color = '#a1a1aa';
+        }
+
+        // Dispatch custom event so individual pages can react
+        const langEvent = new CustomEvent('languageChanged', { detail: { lang } });
+        document.dispatchEvent(langEvent);
+    }
+
+    // Initial UI update
+    updateGlobalLanguageUI(currentLang);
+
+    if (globalFr && globalEn) {
+        globalFr.addEventListener('click', () => {
+            currentLang = 'fr';
+            localStorage.setItem('siteLang', currentLang);
+            updateGlobalLanguageUI(currentLang);
+        });
+
+        globalEn.addEventListener('click', () => {
+            currentLang = 'en';
+            localStorage.setItem('siteLang', currentLang);
+            updateGlobalLanguageUI(currentLang);
+        });
+    }
+});
