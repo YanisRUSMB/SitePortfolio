@@ -10,6 +10,23 @@
   --shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
 
+html[data-theme="light"] {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-2: #f4f4f5;
+  --text: #09090b;
+  --muted: #71717a;
+  --line: rgba(0, 0, 0, 0.1);
+  --accent: #18181b;
+  --accent-2: #2563eb;
+  --shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+html[data-theme="light"] body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
 *{box-sizing:border-box}
 html,body {
   margin: 0;
@@ -144,6 +161,51 @@ a{
   grid-template-columns: 1.1fr .9fr;
   gap:28px;
   align-items:start;
+}
+
+.centered-hero {
+  text-align: center;
+  padding: 18vh 0 10vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centered-hero h1 {
+  font-size: 56px;
+  line-height: 1.15;
+  margin: 24px auto 48px;
+  max-width: 1000px;
+}
+
+.profile-section {
+  text-align: center;
+  padding: 10vh 0 18vh;
+}
+
+.profile-section .lead {
+  max-width: 700px;
+  margin: 0 auto 36px;
+  font-size: 22px;
+  color: var(--text);
+}
+
+.center-stack {
+  justify-content: center;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.center-cta {
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.center-links {
+  justify-content: center;
+  margin-top: 24px;
 }
 
 .heroCopy h1{
@@ -313,7 +375,7 @@ a{
 }
 
 .pageHeader {
-  text-align: left;
+  text-align: center;
   padding: 80px 0 40px;
 }
 
@@ -347,6 +409,69 @@ a{
 /* =========================================
    SKILLS & EXPERIENCES (À Propos)
 ========================================= */
+.skills-bars-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.skill-name {
+  color: var(--text);
+}
+
+.skill-percent {
+  color: var(--muted);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--surface-2);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent-2);
+  border-radius: 4px;
+  transform-origin: left;
+  animation: loadProgress 1.5s ease-out forwards;
+}
+
+@keyframes loadProgress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 .skillsGrid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
@@ -486,7 +611,9 @@ a{
 }
 
 .projectImagePlaceholder {
-  height: 200px;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
   background: #1e243a;
   display: flex;
   align-items: center;
@@ -712,9 +839,29 @@ a{
 .footerInner{
   display:flex;
   flex-wrap:wrap;
+  align-items: center;
   justify-content:space-between;
-  gap:12px;
+  gap:20px;
   font-size: 14px;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footerSocials a {
+  color: var(--muted);
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerSocials a:hover {
+  color: var(--text);
+  transform: translateY(-3px);
 }
 
 /* =========================================
@@ -770,60 +917,130 @@ a{
   .nav {
     justify-content: center;
   }
+  .footerInner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footerSocials {
+    order: -1;
+    margin-bottom: 12px;
+  }
 }
 
 .heroContainer {
-  border-bottom: 1px solid var(--line);
   padding-bottom: 60px;
+}
+
+.project-badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-2);
+    border: 1px solid var(--accent-2);
+    padding: 2px 8px;
+    border-radius: 12px;
+    align-self: flex-start;
+    max-width: max-content;
+}
+
+
+/* Theme Switch */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 44px;
+}
+.theme-switch input {
+  display: none;
+}
+.slider {
+  background-color: var(--surface-2);
+  border: 1px solid var(--line);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 24px;
+}
+.slider:before {
+  background-color: var(--text);
+  bottom: 3px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+input:checked + .slider:before {
+  transform: translateX(18px);
+  background-color: #fff;
+}
+
+/* Fix for light mode specific images and content if needed */
+/* html[data-theme="light"] .logoMarkImg {
+  filter: invert(1);
+} */
+html[data-theme="light"] .projectImagePlaceholder,
+html[data-theme="light"] .projectMainMediaPlaceholder {
+  background: #e2e8f0;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: var(--surface);
+  transform: translateY(-3px);
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* =========================================
    THEME TOGGLE (LIGHT MODE)
 ========================================= */
-html[data-theme="light"] {
-  --bg: #f4f4f5;
-  --surface: #ffffff;
-  --surface-2: #e4e4e7;
-  --text: #09090b;
-  --muted: #52525b;
-  --line: rgba(0, 0, 0, 0.1);
-  --accent: #27272a;
-  --accent-2: #2563eb;
-  --shadow: 0 8px 30px rgba(0,0,0,0.08);
-}
-html[data-theme="light"] body {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-}
-html[data-theme="light"] .siteHeader {
-  background: rgba(244, 244, 245, 0.85);
-}
-html[data-theme="light"] .nav {
-  background: rgba(0, 0, 0, 0.05);
-}
-html[data-theme="light"] .nav a:hover, html[data-theme="light"] .nav a.active {
-  background: rgba(0, 0, 0, 0.05);
-}
-html[data-theme="light"] .btn.ghost {
-  background: rgba(0, 0, 0, 0.02);
-}
-html[data-theme="light"] .btn.ghost:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-html[data-theme="light"] .pill {
-  background: rgba(0, 0, 0, 0.03);
-}
-html[data-theme="light"] .pill:hover {
-  background: rgba(0, 0, 0, 0.06);
-}
-html[data-theme="light"] .section.alt, html[data-theme="light"] .contact {
-  background: rgba(0, 0, 0, 0.02);
-}
-html[data-theme="light"] .footer {
-  background: #ffffff;
-}
-
 .themeToggle {
   background: #2a2a35;
   border-radius: 0.5rem;
