@@ -141,3 +141,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Dispatch initial translation event on load to populate the site correctly
+document.addEventListener("DOMContentLoaded", () => {
+    const currentLang = localStorage.getItem('siteLang') || 'fr';
+    const langEvent = new CustomEvent('languageChanged', { detail: { lang: currentLang } });
+    document.dispatchEvent(langEvent);
+});
