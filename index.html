@@ -27,9 +27,7 @@
         <a href="index.html" class="active" data-i18n="nav.home">Accueil</a>
         <a href="projets.html" data-i18n="nav.projects">Projets</a>
         <a href="a-propos.html" data-i18n="nav.about">À propos</a>
-        <a href="contact.html" data-i18n="nav.contact">Contact</a>
-
-      <div class="langToggle" style=" display: flex; background: #2a2a35; border-radius: 0.5rem; overflow: hidden; padding: 2px;">
+        <div class="langToggle" style=" display: flex; background: #2a2a35; border-radius: 0.5rem; overflow: hidden; padding: 2px;">
         <button id="globalLangFr" class="active" style="background: #3b82f6; color: #fff; border: none; padding: 0.25rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; font-family: Inter; font-weight: 500; transition: all 0.2s;">FR</button>
         <button id="globalLangEn" style="background: transparent; color: #a1a1aa; border: none; padding: 0.25rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; font-family: Inter; font-weight: 500; transition: all 0.2s;">EN</button>
       </div>
@@ -56,29 +54,28 @@
           </p>
 
           <div class="ctaRow">
-            <a class="btn primary" href="projets.html">Voir mes projets</a data-i18n="home.btn.projects">
-            <a class="btn ghost" href="a-propos.html">En savoir plus sur moi</a data-i18n="home.btn.about">
+            <a class="btn ghost" href="a-propos.html" data-i18n="home.btn.about">En savoir plus sur moi</a>
           </div>
 
           <div class="meta">
             <div>
-              <span class="metaLabel">Localisation</span>
-              <span class="metaValue">Chicoutimi (QC)</span>
+              <span class="metaLabel" data-i18n="home.loc.label">Localisation</span>
+              <span class="metaValue" data-i18n="home.loc.value">Chicoutimi (QC)</span>
             </div>
             <div>
-              <span class="metaLabel">Disponibilité</span>
-              <span class="metaValue">Stage partout au Québec</span>
+              <span class="metaLabel" data-i18n="home.disp.label">Disponibilité</span>
+              <span class="metaValue" data-i18n="home.disp.value">Stage partout au Québec</span>
             </div>
             <div>
-              <span class="metaLabel">Focus</span>
-              <span class="metaValue">Gameplay · IA · Réseaux</span>
+              <span class="metaLabel" data-i18n="home.focus.label">Focus</span>
+              <span class="metaValue" data-i18n="home.focus.value">Gameplay · IA · Réseaux</span>
             </div>
           </div>
         </div>
 
         <div class="heroCard">
-          <h2>Profil</h2>
-          <p>
+          <h2 data-i18n="home.profile.title">Profil</h2>
+          <p data-i18n="home.profile.text">
             Étudiant motivé, encore junior, je veux apprendre davantage et m’investir dans des projets
             sérieux ou indépendants. Je recherche un stage dans le cadre de ma maîtrise à l’UQAC.
           </p>
@@ -103,8 +100,8 @@
     <section class="section alt">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Projets Récents</h2>
-          <p>Un aperçu de mon travail. Découvrez la liste complète dans la section Projets.</p>
+          <h2 data-i18n="home.recent.title">Projets Récents</h2>
+          <p data-i18n="home.recent.desc">Un aperçu de mon travail. Découvrez la liste complète dans la section Projets.</p>
         </div>
                 <div class="projectsGrid">
           <a href="projet-tropicmadness.html" class="projectCardLink">
@@ -113,8 +110,9 @@
                 <img src="https://img.itch.zone/aW1nLzI1ODk0NjAxLnBuZw==/315x250%23c/gJnztp.png" alt="TropicMadness" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>TropicMadness</h3>
-                <p>Jeu · Un jeu d'aventure palpitant en pleine nature avec un système de crafting poussé.</p>
+                <span class="project-badge" data-i18n="card.category.game">Jeu</span>
+                <h3 data-i18n="proj.tropicmadness.title">TropicMadness</h3>
+                <p data-i18n="proj.tropicmadness.desc">Un jeu d'aventure palpitant en pleine nature avec un système de crafting poussé.</p>
               </div>
             </div>
           </a>
@@ -124,8 +122,9 @@
                 <img src="assets/mytool.png" onerror="this.src='https://via.placeholder.com/315x250/1e243a/a1a1aa?text=Outil+Unreal'" alt="My Tool Unreal" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>My Tool Unreal</h3>
-                <p>Outil · Plugin Unreal Engine pour générer du contenu procédural facilement.</p>
+                <span class="project-badge" data-i18n="card.category.tool">Outil</span>
+                <h3 data-i18n="proj.mytoolunreal.title">My Tool Unreal</h3>
+                <p data-i18n="proj.mytoolunreal.desc">Plugin Unreal Engine pour générer du contenu procédural facilement.</p>
               </div>
             </div>
           </a>
@@ -135,8 +134,9 @@
                 <img src="assets/api.png" onerror="this.src='https://via.placeholder.com/315x250/1e243a/a1a1aa?text=API+Test'" alt="API Node Drones" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>API Node Drones</h3>
-                <p>Test Technique · Une API backend en Node.js pour la gestion d'une flotte de drones.</p>
+                <span class="project-badge" data-i18n="card.category.test">Test Technique</span>
+                <h3 data-i18n="proj.apinodedrones.title">API Node Drones</h3>
+                <p data-i18n="proj.apinodedrones.desc">Une API backend en Node.js pour la gestion d'une flotte de drones.</p>
               </div>
             </div>
           </a>

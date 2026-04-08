@@ -27,9 +27,7 @@
         <a href="index.html" data-i18n="nav.home">Accueil</a>
         <a href="projets.html" class="active" data-i18n="nav.projects">Projets</a>
         <a href="a-propos.html" data-i18n="nav.about">À propos</a>
-        <a href="contact.html" data-i18n="nav.contact">Contact</a>
-
-      <div class="langToggle" style=" display: flex; background: #2a2a35; border-radius: 0.5rem; overflow: hidden; padding: 2px;">
+        <div class="langToggle" style=" display: flex; background: #2a2a35; border-radius: 0.5rem; overflow: hidden; padding: 2px;">
         <button id="globalLangFr" class="active" style="background: #3b82f6; color: #fff; border: none; padding: 0.25rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; font-family: Inter; font-weight: 500; transition: all 0.2s;">FR</button>
         <button id="globalLangEn" style="background: transparent; color: #a1a1aa; border: none; padding: 0.25rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; font-family: Inter; font-weight: 500; transition: all 0.2s;">EN</button>
       </div>
@@ -68,7 +66,8 @@
                 <img src="https://img.itch.zone/aW1nLzI1ODk0NjAxLnBuZw==/315x250%23c/gJnztp.png" alt="TropicMadness" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>TropicMadness</h3>
+                <span class="project-badge" data-i18n="card.category.game">Jeu</span>
+                <h3 data-i18n="proj.tropicmadness.title">TropicMadness</h3>
                 <p>Vous incarnez un personnage prêt à partir pour l'escapade ultime. Vous vous attendez au vol le plus calme de votre vie en direction d'une île paradisiaque, mais les choses risquent de ne pas se passer comme prévu...</p>
               </div>
             </div>
@@ -76,11 +75,12 @@
 
           <a href="projet-artest.html" class="projectCardLink" data-category="tests">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: #2a2a35; border: none; height: 200px; display: flex; align-items: center; justify-content: center;">
-                <span style="color: #a1a1aa; font-family: Inter; font-size: 14px;">Image / Vidéo</span>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+                <img src="https://via.placeholder.com/315x250/1e243a/a1a1aa?text=Image+Indisponible" alt="Image Indisponible" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>AR Test</h3>
+                <span class="project-badge" data-i18n="card.category.test">Test Technique</span>
+                <h3 data-i18n="proj.artest.title">AR Test</h3>
                 <p>Application mobile en réalité augmentée conçue pour la remise à niveau des utilisateurs, intégrant un système de quêtes adapté à différents types de profils.</p>
               </div>
             </div>
@@ -88,11 +88,12 @@
 
           <a href="projet-moteurphysique.html" class="projectCardLink" data-category="tests">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: #2a2a35; border: none; height: 200px; display: flex; align-items: center; justify-content: center;">
-                <span style="color: #a1a1aa; font-family: Inter; font-size: 14px;">Image / Vidéo</span>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+                <img src="https://via.placeholder.com/315x250/1e243a/a1a1aa?text=Image+Indisponible" alt="Image Indisponible" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>Moteur Physique</h3>
+                <span class="project-badge" data-i18n="card.category.test">Test Technique</span>
+                <h3 data-i18n="proj.moteurphysique.title">Moteur Physique</h3>
                 <p>Projet de création d'un moteur physique en C++ réalisé dans le cadre d'un cours de math-physique à l'UQAC. Ce moteur gère la physique 3D basique.</p>
               </div>
             </div>
@@ -100,10 +101,11 @@
 
           <a href="projet-mytoolunreal.html" class="projectCardLink" data-category="outils">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: #2a2a35; border: none; height: 200px; display: flex; align-items: center; justify-content: center;">
-                <span style="color: #a1a1aa; font-family: Inter; font-size: 14px;">Image / Vidéo</span>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+                <img src="https://via.placeholder.com/315x250/1e243a/a1a1aa?text=Image+Indisponible" alt="Image Indisponible" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
+                <span class="project-badge" data-i18n="card.category.tool">Outil</span>
                 <h3>Tool Unreal</h3>
                 <p>Outil utilitaire pour Unreal Engine permettant de faciliter la gestion et l'organisation des projets au sein du moteur.</p>
               </div>
@@ -112,10 +114,11 @@
 
           <a href="projet-apinodedrones.html" class="projectCardLink" data-category="tests">
             <div class="projectCard">
-              <div class="projectImagePlaceholder" style="padding: 0; background: #2a2a35; border: none; height: 200px; display: flex; align-items: center; justify-content: center;">
-                <span style="color: #a1a1aa; font-family: Inter; font-size: 14px;">Image / Vidéo</span>
+              <div class="projectImagePlaceholder" style="padding: 0; background: none; border: none; height: auto;">
+                <img src="https://via.placeholder.com/315x250/1e243a/a1a1aa?text=Image+Indisponible" alt="Image Indisponible" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
+                <span class="project-badge" data-i18n="card.category.test">Test Technique</span>
                 <h3>API Node Drones Web</h3>
                 <p>Une première version d'un projet visant à contrôler des drones via une interface web, en utilisant un panel de contrôle de puissance. L'API est développée en Node.js.</p>
               </div>
@@ -128,7 +131,8 @@
                 <img src="https://img.itch.zone/aW1nLzIzNTc4MDA2LnBuZw==/315x250%23c/7AB5EW.png" alt="One Last Stake" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>One Last Stake</h3>
+                <span class="project-badge" data-i18n="card.category.game">Jeu</span>
+                <h3 data-i18n="proj.onelaststake.title">One Last Stake</h3>
                 <p>OneLastTake est un jeu de carte inspiré du jeu de la bataille dans un rogue-lite. Affrontez des adversaires et créez des contrefaçons de cartes en collant subtilement des stickers dessus ! L'objectif est d'aller le plus loin possible avec les différents decks disponibles.</p>
               </div>
             </div>
@@ -140,7 +144,8 @@
                 <img src="https://img.itch.zone/aW1nLzE4MTYyNzEzLnBuZw==/315x250%23c/7XCcNE.png" alt="BloodyEscape" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>BloodyEscape</h3>
+                <span class="project-badge" data-i18n="card.category.game">Jeu</span>
+                <h3 data-i18n="proj.bloodyescape.title">BloodyEscape</h3>
                 <p>Vous êtes un prisonnier à qui l'on a promis une chance de liberté. Jeté à travers un portail, vous vous réveillez dans un donjon d'une dimension instable. Votre objectif : fouiller les lieux, vous équiper, et trouver un autre portail pour vous échapper.</p>
               </div>
             </div>
@@ -151,6 +156,7 @@
                 <img src="https://img.itch.zone/aW1nLzIwNDE3MTkwLnBuZw==/315x250%23c/gZKaVi.png" alt="Critter Eats" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
+                <span class="project-badge" data-i18n="card.category.game">Jeu</span>
                 <h3>Critter Eats</h3>
                 <p>Prototype du second pitch de jeu pour le cours réalisation de jeux vidéo de l'UQAC. C'est un jeu centré sur le parcours du héros accompagné de son fidèle compagnon.</p>
               </div>
@@ -163,7 +169,8 @@
                 <img src="https://img.itch.zone/aW1nLzIwMTA4ODM4LnBuZw==/315x250%23c/XgFjfd.png" alt="Bedroom Rumble" class="projectImage" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
               </div>
               <div class="projectInfo">
-                <h3>Bedroom Rumble</h3>
+                <span class="project-badge" data-i18n="card.category.game">Jeu</span>
+                <h3 data-i18n="proj.bedroomrumble.title">Bedroom Rumble</h3>
                 <p>Bedroom Rumble est un petit jeu créé lors de la Wonderjam Winter 2025 en 48 heures. C'est un jeu versus avec des mécaniques de tower defense en local, où vous affrontez votre frère ou sœur pour le contrôle de la chambre ! Le but est de détruire le lit adverse en utilisant des jouets.</p>
               </div>
             </div>

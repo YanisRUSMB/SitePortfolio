@@ -27,9 +27,7 @@
         <a href="index.html" data-i18n="nav.home">Accueil</a>
         <a href="projets.html" data-i18n="nav.projects">Projets</a>
         <a href="a-propos.html" class="active" data-i18n="nav.about">À propos</a>
-        <a href="contact.html" data-i18n="nav.contact">Contact</a>
-
-      <div class="langToggle" style=" display: flex; background: #2a2a35; border-radius: 0.5rem; overflow: hidden; padding: 2px;">
+        <div class="langToggle" style=" display: flex; background: #2a2a35; border-radius: 0.5rem; overflow: hidden; padding: 2px;">
         <button id="globalLangFr" class="active" style="background: #3b82f6; color: #fff; border: none; padding: 0.25rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; font-family: Inter; font-weight: 500; transition: all 0.2s;">FR</button>
         <button id="globalLangEn" style="background: transparent; color: #a1a1aa; border: none; padding: 0.25rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; font-family: Inter; font-weight: 500; transition: all 0.2s;">EN</button>
       </div>
@@ -49,28 +47,27 @@
       <div class="container">
         <div class="aboutHeaderLayout" style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap;">
           <div class="aboutText" style="flex: 1; min-width: 300px;">
-            <h1>À propos de moi</h1>
-            <p class="lead" style="margin-bottom: 2rem;">Développeur gameplay passionné, je conçois et implémente des systèmes de jeu, des outils et des intelligences artificielles.</p>
-            <p style="color: #a1a1aa; line-height: 1.6; margin-bottom: 2rem;">
-              Actuellement étudiant à l'UQAC en maîtrise développement de jeux vidéo, je suis constamment à la recherche de nouveaux défis techniques. Mon approche est centrée sur l'expérience joueur, la performance du code et la création d'outils pour faciliter le travail d'équipe.
-            </p>
-            <div class="cvSection" style="margin-top: 2rem;">
-              <h3 style="font-family: Outfit; font-size: 1rem; color: #fff; margin-bottom: 1rem;">Télécharger mon CV</h3>
+            <h1 data-i18n="about.title">À propos de moi</h1>
+            <p class="lead" style="margin-bottom: 2rem;" data-i18n="about.lead">Passionné par la création de jeux et le développement de systèmes interactifs.</p>
 
-              <div class="cvButtonsGroup">
+            <div class="cvSection" style="margin-top: 2rem;">
+              <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 1rem;">
+                <span style="font-size: 1.5rem;">📄</span> <span data-i18n="about.cv.title">Mon CV</span>
+              </h3>
+
+              <div class="cvButtonsGroup" style="display: flex; gap: 1rem; flex-wrap: wrap;">
                 <!-- Les liens FR s'afficheront par défaut -->
                 <div id="cvLinksContainer" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: flex-start;">
                   <a id="linkCvVisuel" href="CV_REYNAUD_FR.pdf" target="_blank" class="btn primary" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; font-size: 0.875rem;">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                    CV Visuel
+                    <span data-i18n="about.btn.cv.visual">CV Visuel</span>
                   </a>
                   <a id="linkCvBrut" href="CV_REYNAUD_LATEX_FR.pdf" target="_blank" class="btn ghost" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; font-size: 0.875rem;">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                    CV Brut (LaTeX)
+                    <span data-i18n="about.btn.cv.latex">CV Brut (LaTeX)</span>
                   </a>
                 </div>
-              </div>
-            </div>
+
 
                         <script>
               document.addEventListener('DOMContentLoaded', () => {
@@ -108,22 +105,22 @@
     <section id="competences" class="section alt">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Mes Compétences</h2>
-          <p>Technologies, langages et outils que je maîtrise.</p>
+          <h2 data-i18n="about.skills.section.title">Mes Compétences</h2>
+          <p data-i18n="about.skills.section.desc">Technologies, langages et outils que je maîtrise.</p>
         </div>
 
         <div class="skillsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
           <div class="skillCard" style="background: #1e1e24; border: 1px solid #2a2a35; border-radius: 1rem; padding: 2rem; transition: transform 0.3s ease, border-color 0.3s ease;">
-            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;">Programmation & Moteurs</h3>
+            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;" data-i18n="about.skills.prog.title">Programmation & Moteurs</h3>
             <p style="color: #a1a1aa; line-height: 1.6;">C++<br>C#<br>Unreal Engine 5 (C++ & Blueprints)<br>Unity</p>
           </div>
           <div class="skillCard" style="background: #1e1e24; border: 1px solid #2a2a35; border-radius: 1rem; padding: 2rem; transition: transform 0.3s ease, border-color 0.3s ease;">
-            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;">Gameplay & Systèmes</h3>
-            <p style="color: #a1a1aa; line-height: 1.6;">Systèmes de combat<br>Behavior Trees & IA<br>Interfaces (UI)<br>Outils internes & Debug</p>
+            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;" data-i18n="about.skills.gameplay.title">Gameplay & Systèmes</h3>
+            <p style="color: #a1a1aa; line-height: 1.6;" data-i18n="about.skills.gameplay.desc">Systèmes de combat<br>Behavior Trees & IA<br>Interfaces (UI)<br>Outils internes & Debug</p>
           </div>
           <div class="skillCard" style="background: #1e1e24; border: 1px solid #2a2a35; border-radius: 1rem; padding: 2rem; transition: transform 0.3s ease, border-color 0.3s ease;">
-            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;">Outils de Production</h3>
-            <p style="color: #a1a1aa; line-height: 1.6;">Git & Perforce<br>Visual Studio & Rider<br>Jira & Trello<br>Méthodes Agiles</p>
+            <h3 style="margin-bottom: 1rem; color: #fff; font-family: Outfit; font-size: 1.25rem;" data-i18n="about.skills.tools.title">Outils de Production</h3>
+            <p style="color: #a1a1aa; line-height: 1.6;" data-i18n="about.skills.tools.desc">Git & Perforce<br>Visual Studio & Rider<br>Jira & Trello<br>Méthodes Agiles</p>
           </div>
         </div>
       </div>
@@ -132,43 +129,43 @@
     <section id="experiences" class="section">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Parcours & Expériences</h2>
-          <p>Mon parcours académique et mes réalisations en équipe.</p>
+          <h2 data-i18n="about.timeline.title">Parcours & Expériences</h2>
+          <p data-i18n="about.timeline.desc">Mon parcours académique et mes réalisations en équipe.</p>
         </div>
 
         <div class="timeline" style="position: relative; max-width: 800px; margin: 0 auto;">
           <div class="timeline-line" style="position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: #2a2a35;"></div>
 
           <div class="timeline-item" style="position: relative; padding-left: 60px; margin-bottom: 3rem;">
-            <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #3b82f6; box-shadow: 0 0 0 4px #121214;"></div>
-            <span class="timeline-date" style="display: block; color: #3b82f6; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">2025 - Présent</span>
-            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;">Maîtrise — Développement de jeux vidéo</h3>
-            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;">UQAC (Université du Québec à Chicoutimi)</span>
-            <p style="color: #a1a1aa; line-height: 1.6;">Spécialisation en programmation Gameplay, IA, optimisation et création d'outils. Projets réalisés en équipe avec des étudiants artistes et designers.</p>
+            <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #a1a1aa; box-shadow: 0 0 0 4px #121214;"></div>
+            <span class="timeline-date" style="display: block; color: #a1a1aa; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="about.timeline.4.date">2022</span>
+            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;" data-i18n="about.timeline.4.title">Licence Informatique (Parcours A)</h3>
+            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="about.timeline.4.place">Université Savoie Mont Blanc</span>
+            <p style="color: #a1a1aa; line-height: 1.6;" data-i18n="about.timeline.4.desc">Réalisation d'applications : Conception, Développement, Validation. Acquisition des bases solides en informatique fondamentale.</p>
           </div>
 
           <div class="timeline-item" style="position: relative; padding-left: 60px; margin-bottom: 3rem;">
             <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #a1a1aa; box-shadow: 0 0 0 4px #121214;"></div>
-            <span class="timeline-date" style="display: block; color: #a1a1aa; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Septembre 2024 - Avril 2025</span>
-            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;">Bi-diplomation — Développement de jeux vidéo</h3>
-            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;">UQAC</span>
-            <p style="color: #a1a1aa; line-height: 1.6;">Programme d'échange étudiant approfondissant les concepts avancés du développement de jeux vidéo.</p>
+            <span class="timeline-date" style="display: block; color: #a1a1aa; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="about.timeline.3.date">Juin 2024</span>
+            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;" data-i18n="about.timeline.3.title">Stage en développement</h3>
+            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="about.timeline.3.place">Stage de fin de licence</span>
+            <p style="color: #a1a1aa; line-height: 1.6;" data-i18n="about.timeline.3.desc">Mise en pratique des compétences acquises lors de ma formation dans un environnement professionnel.</p>
           </div>
 
           <div class="timeline-item" style="position: relative; padding-left: 60px; margin-bottom: 3rem;">
             <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #a1a1aa; box-shadow: 0 0 0 4px #121214;"></div>
-            <span class="timeline-date" style="display: block; color: #a1a1aa; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Juin 2024</span>
-            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;">Stage en développement</h3>
-            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;">Stage de fin de licence</span>
-            <p style="color: #a1a1aa; line-height: 1.6;">Mise en pratique des compétences acquises lors de ma formation dans un environnement professionnel.</p>
+            <span class="timeline-date" style="display: block; color: #a1a1aa; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="about.timeline.2.date">Septembre 2024 - Avril 2025</span>
+            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;" data-i18n="about.timeline.2.title">Bi-diplomation — Développement de jeux vidéo</h3>
+            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="about.timeline.2.place">UQAC</span>
+            <p style="color: #a1a1aa; line-height: 1.6;" data-i18n="about.timeline.2.desc">Programme d'échange étudiant approfondissant les concepts avancés du développement de jeux vidéo.</p>
           </div>
 
           <div class="timeline-item" style="position: relative; padding-left: 60px;">
-            <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #a1a1aa; box-shadow: 0 0 0 4px #121214;"></div>
-            <span class="timeline-date" style="display: block; color: #a1a1aa; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">2022</span>
-            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;">Licence Informatique (Parcours A)</h3>
-            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;">Université Savoie Mont Blanc</span>
-            <p style="color: #a1a1aa; line-height: 1.6;">Réalisation d'applications : Conception, Développement, Validation. Acquisition des bases solides en informatique fondamentale.</p>
+            <div class="timeline-dot" style="position: absolute; left: 16px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #3b82f6; box-shadow: 0 0 0 4px #121214;"></div>
+            <span class="timeline-date" style="display: block; color: #3b82f6; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="about.timeline.1.date">2025 - Présent</span>
+            <h3 style="font-family: Outfit; font-size: 1.25rem; color: #fff; margin-bottom: 0.25rem;" data-i18n="about.timeline.1.title">Maîtrise — Développement de jeux vidéo</h3>
+            <span class="timeline-place" style="display: block; color: #a1a1aa; font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="about.timeline.1.place">UQAC (Université du Québec à Chicoutimi)</span>
+            <p style="color: #a1a1aa; line-height: 1.6;" data-i18n="about.timeline.1.desc">Spécialisation en programmation Gameplay, IA, optimisation et création d'outils. Projets réalisés en équipe avec des étudiants artistes et designers.</p>
           </div>
         </div>
       </div>
@@ -176,9 +173,9 @@
 
     <section class="section alt" style="text-align: center;">
       <div class="container">
-        <h2 style="font-family: Outfit; font-size: 2rem; color: #fff; margin-bottom: 1rem;">Prêt à travailler ensemble ?</h2>
-        <p style="color: #a1a1aa; max-width: 600px; margin: 0 auto 2rem auto; line-height: 1.6;">Je suis toujours ouvert aux nouvelles opportunités et aux discussions passionnantes autour du jeu vidéo.</p>
-        <a href="contact.html" class="btn primary">Me contacter</a>
+        <h2 style="font-family: Outfit; font-size: 2rem; color: #fff; margin-bottom: 1rem;" data-i18n="about.ready.title">Prêt à travailler ensemble ?</h2>
+        <p style="color: #a1a1aa; max-width: 600px; margin: 0 auto 2rem auto; line-height: 1.6;" data-i18n="about.ready.desc">Je suis toujours ouvert aux nouvelles opportunités et aux discussions passionnantes autour du jeu vidéo.</p>
+        <a href="contact.html" class="btn primary" data-i18n="about.ready.btn">Me contacter</a>
       </div>
     </section>
   </main>
