@@ -57,6 +57,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ==========================================
+// CV LANGUAGE SWITCHING
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+    function updateCVLinks(lang) {
+        const latexBtn = document.getElementById("cv-latex-btn");
+        const visuelBtn = document.getElementById("cv-visuel-btn");
+
+        if (latexBtn && visuelBtn) {
+            if (lang === "en") {
+                latexBtn.href = "CV_REYNAUD_Yanis_latex_EN.pdf";
+                visuelBtn.href = "CV_REYNAUD_Yanis_EN.pdf";
+            } else {
+                latexBtn.href = "CV_REYNAUD_Yanis_latex_FR.pdf";
+                visuelBtn.href = "CV_REYNAUD_Yanis_FR.pdf";
+            }
+        }
+    }
+
+    // Initialise avec la langue courante
+    const currentLang = localStorage.getItem("preferredLang") || "fr";
+    updateCVLinks(currentLang);
+
+    // Écoute les changements de langue (depuis lang.js)
+    document.addEventListener("languageChanged", (e) => {
+        updateCVLinks(e.detail.lang);
+    });
+});
+
+// ==========================================
 // PROJECT FILTERING
 // ==========================================
 
