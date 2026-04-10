@@ -51,33 +51,38 @@
     <section class="section pageHeader">
       <div class="container">
         <h1 data-i18n="about.header.title">À propos de moi</h1>
-        <p class="lead" data-i18n="about.header.desc">Découvrez mon parcours, mes expériences et les compétences techniques que j'ai développées.</p>
+        <p class="lead" data-i18n="about.header.desc">Le jeu vidéo est une partie de moi. J'ai commencé très tôt, j'ai toujours voulu me rapprocher de ce domaine. Quand j'ai commencé l'informatique il y a 5 ans, je me suis donné les moyens d'avoir l'opportunité que j'ai aujourd'hui : pouvoir étudier ma passion par le biais d'un échange universitaire.</p>
+
+        <div class="cv-actions" style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+          <a href="CV_REYNAUD_Yanis_latex_FR.pdf" id="cv-latex-btn" class="btn primary" target="_blank" data-i18n="about.cv.latex">Télécharger CV (Classique)</a>
+          <a href="CV_REYNAUD_Yanis_FR.pdf" id="cv-visuel-btn" class="btn ghost" target="_blank" data-i18n="about.cv.visuel">Télécharger CV (Visuel)</a>
+        </div>
       </div>
     </section>
 
     <section id="competences" class="section alt">
       <div class="container">
         <div class="sectionTitle">
-          <h2>Compétences</h2>
-          <p>Tech stack, méthodes et outils que j’utilise régulièrement.</p>
+          <h2 data-i18n="about.services.title">Domaines d'expertise</h2>
+          <p data-i18n="about.services.desc">Ce que je peux apporter à votre équipe.</p>
         </div>
 
         <div class="skillsGrid">
           <div class="skillCard">
-            <h3>Gameplay</h3>
-            <p>Systèmes de combat, interactions, UI et boucle de jeu.</p>
+            <h3 data-i18n="about.services.gameplay.title">Gameplay</h3>
+            <p data-i18n="about.services.gameplay.desc">Systèmes de combat, interactions, UI et boucle de jeu.</p>
           </div>
           <div class="skillCard">
-            <h3>IA &amp; Tools</h3>
-            <p>Behavior Trees, navigation, outils de debug et profils.</p>
+            <h3 data-i18n="about.services.ia.title">IA &amp; Tools</h3>
+            <p data-i18n="about.services.ia.desc">Behavior Trees, navigation, outils de debug et profils.</p>
           </div>
           <div class="skillCard">
-            <h3>Tech</h3>
-            <p>C++ · Blueprint · Git/Perforce · Visual Studio/Rider.</p>
+            <h3 data-i18n="about.services.tech.title">Tech</h3>
+            <p data-i18n="about.services.tech.desc">C++ · Blueprint · Git/Perforce · Visual Studio/Rider.</p>
           </div>
           <div class="skillCard">
-            <h3>Réseau</h3>
-            <p>Optimisation, lobby, re-sync, duplication.</p>
+            <h3 data-i18n="about.services.network.title">Réseau</h3>
+            <p data-i18n="about.services.network.desc">Optimisation, lobby, re-sync, duplication.</p>
           </div>
         </div>
       </div>
@@ -87,113 +92,32 @@
       <div class="container">
         <div class="sectionTitle">
           <h2 data-i18n="about.skills.title">Mes Langages & Outils</h2>
-          <p data-i18n="about.skills.desc">Aperçu de mes maîtrises techniques par niveau de compétence.</p>
+          <p data-i18n="about.skills.desc">Technologies que je maîtrise.</p>
         </div>
 
-        <div class="skills-bars-container">
-          <!-- Colonne de gauche -->
-          <div class="skills-column">
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">C#</span>
-                <span class="skill-percent">70%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 70%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">C++</span>
-                <span class="skill-percent">65%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 65%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">Blueprint</span>
-                <span class="skill-percent">70%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 70%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">GDScript</span>
-                <span class="skill-percent">60%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 60%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">HTML</span>
-                <span class="skill-percent">75%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 75%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">CSS</span>
-                <span class="skill-percent">75%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 75%;"></div>
-              </div>
-          </div>
-
-          <!-- Colonne de droite -->
-          <div class="skills-column">
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">SQL</span>
-                <span class="skill-percent">75%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 75%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-percent">60%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 60%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">PHP</span>
-                <span class="skill-percent">60%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 60%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">Laravel</span>
-                <span class="skill-percent">50%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 50%;"></div>
-              </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span class="skill-name">Node.js</span>
-                <span class="skill-percent">50%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 50%;"></div>
-              </div>
+        <div class="skills-carousel-container">
+          <div class="skills-carousel">
+            <div class="pill">C#</div>
+            <div class="pill">C++</div>
+            <div class="pill">Blueprint</div>
+            <div class="pill">GDScript</div>
+            <div class="pill">SQL</div>
+            <div class="pill">HTML / CSS</div>
+            <div class="pill">JavaScript</div>
+            <div class="pill">PHP</div>
+            <div class="pill">Laravel</div>
+            <div class="pill">Node.js</div>
+            <!-- Duplication for infinite scroll effect -->
+            <div class="pill">C#</div>
+            <div class="pill">C++</div>
+            <div class="pill">Blueprint</div>
+            <div class="pill">GDScript</div>
+            <div class="pill">SQL</div>
+            <div class="pill">HTML / CSS</div>
+            <div class="pill">JavaScript</div>
+            <div class="pill">PHP</div>
+            <div class="pill">Laravel</div>
+            <div class="pill">Node.js</div>
           </div>
         </div>
       </div>
@@ -202,31 +126,48 @@
     <section id="experiences" class="section alt">
       <div class="container">
         <div class="sectionTitle">
-          <h2 data-i18n="about.exp.title">Expériences</h2>
-          <p data-i18n="about.exp.desc">Une sélection d’expériences, stages et projets marquants.</p>
+          <h2 data-i18n="about.timeline.title">Mon Parcours</h2>
+          <p data-i18n="about.timeline.desc">Une évolution orientée vers la passion du jeu vidéo.</p>
         </div>
 
-        <div class="experienceGrid">
-          <div class="experienceCard">
-            <h3 style="color: var(--accent-2);" data-i18n="about.exp1.title">Maîtrise — Développement de jeux vidéo</h3>
-            <span data-i18n="about.exp1.date">UQAC — en cours</span>
-            <p data-i18n="about.exp1.desc">Gameplay, IA, optimisation et prototypage.</p>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 style="color: var(--accent-2);" data-i18n="about.time1.title">BUT Informatique</h3>
+              <span data-i18n="about.time1.date">Septembre 2022 - Juin 2024</span>
+              <p data-i18n="about.time1.desc">Parcours Réalisation d'applications (conception, développement, validation). Apprentissage de l'informatique et acquisition de bases solides à l'Université Savoie Mont Blanc (USMB).</p>
+            </div>
           </div>
-          <div class="experienceCard">
-            <h3 style="color: var(--accent-2);" data-i18n="about.exp4.title">Projet Étudiant avec le NAD-UQAC</h3>
-            <span data-i18n="about.exp4.date">Prototype UE — 2025 - Hiver</span>
-            <p data-i18n="about.exp4.desc">Développement d'un jeu vidéo dans le cadre d'un cours collaboratif. (Voir page Projets)</p>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 style="color: var(--accent-2);" data-i18n="about.time2.title">Stage Développeur Logiciel</h3>
+              <span data-i18n="about.time2.date">Juin 2024 - Août 2024</span>
+              <p data-i18n="about.time2.desc">Développement d'outils et de systèmes logiciels pour l'USMB. Mise en pratique professionnelle des acquis.</p>
+            </div>
           </div>
-          <div class="experienceCard">
-            <h3 style="color: var(--accent-2);" data-i18n="about.exp3.title">Participations aux WonderJams</h3>
-            <span data-i18n="about.exp3.date">Plusieurs éditions (ex: Hiver 2025)</span>
-            <p data-i18n="about.exp3.desc">Création de jeux sous contraintes de temps, dont le jeu asymétrique Bedroom Rumble. (Voir page Projets)</p>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 style="color: var(--accent-2);" data-i18n="about.time3.title">Baccalauréat en Développement de Jeux Vidéo</h3>
+              <span data-i18n="about.time3.date">Septembre 2024 - Avril 2025</span>
+              <p data-i18n="about.time3.desc">Année d'échange universitaire dans le cadre d'une bi-diplomation à l'UQAC. Plongée totale dans le développement de jeux vidéo.</p>
+            </div>
           </div>
-          <div class="experienceCard">
-            <h3 style="color: var(--accent-2);" data-i18n="about.exp2.title">Stage Développeur Logiciel</h3>
-            <span data-i18n="about.exp2.date">USMB — Juin - Août 2024</span>
-            <p data-i18n="about.exp2.desc">Développement d'outils et de systèmes logiciels au sein de l'Université Savoie Mont Blanc.</p>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 style="color: var(--accent-2);" data-i18n="about.time4.title">Maîtrise en Développement de Jeux Vidéo</h3>
+              <span data-i18n="about.time4.date">Septembre 2025 - Présent</span>
+              <p data-i18n="about.time4.desc">Actuellement dans le cursus à l'UQAC et à la recherche d'un stage pour consolider mes compétences et me professionnaliser dans l'industrie.</p>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

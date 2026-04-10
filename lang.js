@@ -55,33 +55,42 @@ const translations = {
 
     // === A propos Page (a-propos.html) ===
     "about.header.title": "À propos de moi",
-    "about.header.desc": "Découvrez mon parcours, mes expériences et les compétences techniques que j'ai développées.",
+    "about.header.desc": "Le jeu vidéo est une partie de moi. J'ai commencé très tôt, j'ai toujours voulu me rapprocher de ce domaine. Quand j'ai commencé l'informatique il y a 5 ans, je me suis donné les moyens d'avoir l'opportunité que j'ai aujourd'hui : pouvoir étudier ma passion par le biais d'un échange universitaire.",
+    "about.cv.latex": "Télécharger CV (Classique)",
+    "about.cv.visuel": "Télécharger CV (Visuel)",
+
+    "about.services.title": "Domaines d'expertise",
+    "about.services.desc": "Ce que je peux apporter à votre équipe.",
+    "about.services.gameplay.title": "Gameplay",
+    "about.services.gameplay.desc": "Systèmes de combat, interactions, UI et boucle de jeu.",
+    "about.services.ia.title": "IA & Tools",
+    "about.services.ia.desc": "Behavior Trees, navigation, outils de debug et profils.",
+    "about.services.tech.title": "Tech",
+    "about.services.tech.desc": "C++ · Blueprint · Git/Perforce · Visual Studio/Rider.",
+    "about.services.network.title": "Réseau",
+    "about.services.network.desc": "Optimisation, lobby, re-sync, duplication.",
 
     "about.skills.title": "Mes Langages & Outils",
-    "about.skills.desc": "Aperçu de mes maîtrises techniques par niveau de compétence.",
+    "about.skills.desc": "Technologies que je maîtrise.",
 
-    "about.exp.title": "Expériences",
-    "about.exp.desc": "Une sélection d’expériences, stages et projets marquants.",
+    "about.timeline.title": "Mon Parcours",
+    "about.timeline.desc": "Une évolution orientée vers la passion du jeu vidéo.",
 
-    "about.exp1.title": "Maîtrise — Développement de jeux vidéo",
-    "about.exp1.date": "UQAC — en cours",
-    "about.exp1.desc": "Gameplay, IA, optimisation et prototypage.",
+    "about.time1.title": "BUT Informatique",
+    "about.time1.date": "Septembre 2022 - Juin 2024",
+    "about.time1.desc": "Parcours Réalisation d'applications (conception, développement, validation). Apprentissage de l'informatique et acquisition de bases solides à l'Université Savoie Mont Blanc (USMB).",
 
-    "about.exp2.title": "Stage Développeur Logiciel",
-    "about.exp2.date": "USMB — Juin - Août 2024",
-    "about.exp2.desc": "Développement d'outils et de systèmes logiciels au sein de l'Université Savoie Mont Blanc.",
+    "about.time2.title": "Stage Développeur Logiciel",
+    "about.time2.date": "Juin 2024 - Août 2024",
+    "about.time2.desc": "Développement d'outils et de systèmes logiciels pour l'USMB. Mise en pratique professionnelle des acquis.",
 
-    "about.exp3.title": "Participations aux WonderJams",
-    "about.exp3.date": "Plusieurs éditions (ex: Hiver 2025)",
-    "about.exp3.desc": "Création de jeux sous contraintes de temps, dont le jeu asymétrique Bedroom Rumble. (Voir page Projets)",
+    "about.time3.title": "Baccalauréat en Développement de Jeux Vidéo",
+    "about.time3.date": "Septembre 2024 - Avril 2025",
+    "about.time3.desc": "Année d'échange universitaire dans le cadre d'une bi-diplomation à l'UQAC. Plongée totale dans le développement de jeux vidéo.",
 
-    "about.exp4.title": "Projet Étudiant avec le NAD-UQAC",
-    "about.exp4.date": "Prototype UE — 2025 - Hiver",
-    "about.exp4.desc": "Développement d'un jeu vidéo dans le cadre d'un cours collaboratif. (Voir page Projets)",
-
-    "about.exp5.title": "WIP",
-    "about.exp5.date": "D'autres expériences sont en cours",
-    "about.exp5.desc": "Revenez plus tard !",
+    "about.time4.title": "Maîtrise en Développement de Jeux Vidéo",
+    "about.time4.date": "Septembre 2025 - Présent",
+    "about.time4.desc": "Actuellement dans le cursus à l'UQAC et à la recherche d'un stage pour consolider mes compétences et me professionnaliser dans l'industrie.",
 
     // === Contact Page (contact.html) ===
     "contact.header.title": "Me contacter",
@@ -233,33 +242,42 @@ const translations = {
 
     // === A propos Page (a-propos.html) ===
     "about.header.title": "About Me",
-    "about.header.desc": "Discover my background, my experiences, and the technical skills I've developed.",
+    "about.header.desc": "Video games are a part of me. I started playing very early on, and I've always wanted to get closer to this field. When I started computer science 5 years ago, I worked hard to get the opportunity I have today: studying my passion through a university exchange program.",
+    "about.cv.latex": "Download CV (Classic)",
+    "about.cv.visuel": "Download CV (Visual)",
 
-    "about.skills.title": "Languages & Tools",
-    "about.skills.desc": "Overview of my technical proficiencies by skill level.",
+    "about.services.title": "Areas of Expertise",
+    "about.services.desc": "What I can bring to your team.",
+    "about.services.gameplay.title": "Gameplay",
+    "about.services.gameplay.desc": "Combat systems, interactions, UI, and game loops.",
+    "about.services.ia.title": "AI & Tools",
+    "about.services.ia.desc": "Behavior Trees, navigation, debugging tools, and profilers.",
+    "about.services.tech.title": "Tech",
+    "about.services.tech.desc": "C++ · Blueprint · Git/Perforce · Visual Studio/Rider.",
+    "about.services.network.title": "Network",
+    "about.services.network.desc": "Optimization, lobby, re-sync, and replication.",
 
-    "about.exp.title": "Experience",
-    "about.exp.desc": "A selection of key experiences, internships, and projects.",
+    "about.skills.title": "My Languages & Tools",
+    "about.skills.desc": "Technologies I have mastered.",
 
-    "about.exp1.title": "Master's Degree — Video Game Development",
-    "about.exp1.date": "UQAC — Ongoing",
-    "about.exp1.desc": "Gameplay, AI, optimization, and prototyping.",
+    "about.timeline.title": "My Journey",
+    "about.timeline.desc": "An evolution driven by my passion for video games.",
 
-    "about.exp2.title": "Software Developer Intern",
-    "about.exp2.date": "USMB — June - August 2024",
-    "about.exp2.desc": "Development of software tools and systems at Université Savoie Mont Blanc.",
+    "about.time1.title": "Bachelor of Technology in Computer Science",
+    "about.time1.date": "September 2022 - June 2024",
+    "about.time1.desc": "Application Development path (design, development, validation). Learning computer science and acquiring solid foundations at Université Savoie Mont Blanc (USMB).",
 
-    "about.exp3.title": "WonderJams Participation",
-    "about.exp3.date": "Multiple editions (e.g. Winter 2025)",
-    "about.exp3.desc": "Creation of games under time constraints, including the asymmetrical game Bedroom Rumble. (See Projects page)",
+    "about.time2.title": "Software Developer Intern",
+    "about.time2.date": "June 2024 - August 2024",
+    "about.time2.desc": "Development of software tools and systems for USMB. Professional application of my acquired skills.",
 
-    "about.exp4.title": "Student Project with NAD-UQAC",
-    "about.exp4.date": "UE Prototype — 2025 - Winter",
-    "about.exp4.desc": "Development of a video game as part of a collaborative course. (See Projects page)",
+    "about.time3.title": "Bachelor's Degree in Video Game Development",
+    "about.time3.date": "September 2024 - April 2025",
+    "about.time3.desc": "University exchange year as part of a dual-degree program at UQAC. Total immersion into video game development.",
 
-    "about.exp5.title": "WIP",
-    "about.exp5.date": "Other experiences are in progress",
-    "about.exp5.desc": "Check back later!",
+    "about.time4.title": "Master's Degree in Video Game Development",
+    "about.time4.date": "September 2025 - Present",
+    "about.time4.desc": "Currently enrolled at UQAC and looking for an internship to solidify my skills and gain professional experience in the industry.",
 
     // === Contact Page (contact.html) ===
     "contact.header.title": "Contact Me",
@@ -393,6 +411,9 @@ function setLanguage(lang) {
     const d = new Date();
     updatedEl.textContent = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
   }
+
+  // Dispatch custom event pour prévenir script.js (pour la mise à jour des PDF de CV)
+  document.dispatchEvent(new CustomEvent("languageChanged", { detail: { lang: lang } }));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
